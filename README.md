@@ -26,7 +26,7 @@ cp .env.example .env
 (Or just make sure that the `.env` file is in the root directory)
 
 
-# Run
+## Run
 1. Install dependencies
 ```bash
 npm install
@@ -35,6 +35,27 @@ npm install
 2. Run the development server
 ```bash
 npm run dev
+```
+
+## Deploy or save changes
+1. Add changes
+```bash
+git add .
+```
+
+2. Commit changes
+```bash
+git commit -m "Description of change"
+```
+
+3. Push changes
+```bash
+git push
+```
+
+4. Check if it builds
+```bash
+npm run build
 ```
 
 # Development Team
