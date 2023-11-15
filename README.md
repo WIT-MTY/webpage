@@ -63,7 +63,7 @@ npm run build
 | Name | Github | Email |
 | --- | --- | --- |
 | Alejandra Coeto | [@Ale-Coeto](https://github.com/Ale-Coeto) | alecoeto@hotmail.com |
-| Ángela Pesina | | |
+| Ángela Pesina |[@Angela-Pesina](https://github.com/anpesinaa) | anpesina08@gmail.com |
 | Jimena Carmona | | |
 
 
