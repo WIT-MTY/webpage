@@ -64,7 +64,7 @@ npm run build
 | --- | --- | --- |
 | Alejandra Coeto | [@Ale-Coeto](https://github.com/Ale-Coeto) | alecoeto@hotmail.com |
 | Ángela Pesina | | |
-| Jimena Carmona | | |
+| Jimena Carmona | [@JimenaCarmona2](https://github.com/JimenaCarmona2) | jimenagarcia0284@gmail.com |
 
 
 # Proyect structure
