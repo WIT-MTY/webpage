@@ -29,6 +29,8 @@ cp .env.example .env
 ## Run
 1. Install dependencies
 ```bash
+git fetch
+git pull
 npm install
 ```
 
