@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" >
+      <body className={inter.className} >
         <Nav>
-          <div className='px-10 pt-2 bg-white'>
+          <div className='h-full'>
             {children}
           </div>
         </Nav>
