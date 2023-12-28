@@ -12,8 +12,8 @@ const NavElement = ({ label, href, mobile }: { label: string, href: string, mobi
     return (
         <div className={clsx(
             mobile ? "text-neutral-300 py-1" : "text-neutral-500 hover:text-gray-800",
-            " font-light text-sm ",
-            path === href && "text-neutral-900 font-medium"
+            "font-light text-sm font-montserrat tracking-wider ",
+            path === href && "text-white sm:text-neutral-900 font-medium"
         )} onClick={handleClick}>
             {label}
         </div>
