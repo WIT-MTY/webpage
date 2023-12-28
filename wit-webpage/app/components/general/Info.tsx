@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import NavButton from '../Nav/NavButton';
 import clsx from 'clsx';
+import { useRouter } from 'next/navigation';
 
 interface InfoProps {
     title: string;
@@ -10,15 +11,17 @@ interface InfoProps {
     button: string;
     image: string;
     right?: boolean;
+    href: string;
 }
 
-const Info: React.FC<InfoProps> = ({ title, description, button, image, right }) => {
+const Info: React.FC<InfoProps> = ({ title, description, button, image, right, href }) => {
     const titleCaps = title.toUpperCase();
 
     const text = separateString(description);
+    const router = useRouter();
 
     const handleClick = () => {
-        console.log("clicked");
+        router.push(href);
     }
 
     function separateString(inputString:string) {
@@ -35,8 +38,8 @@ const Info: React.FC<InfoProps> = ({ title, description, button, image, right })
     }
 
     return (
-        <div className='w-auto py-20'>
-            <div className="flex flex-row justify-between gap-10">
+        <div className='w-auto py-20 font-montserrat tracking-wide'>
+            <div className="flex flex-col sm:flex-row justify-between gap-10">
                 {right && (
                     <ImageWit image={image}/> 
                 )}
@@ -45,10 +48,10 @@ const Info: React.FC<InfoProps> = ({ title, description, button, image, right })
                     "basis-1/3 flex flex-col",
                     right ? "items-end text-end" : "items-start text-start"
                 )}>
-                    <h1 className="text-indigo-800 font-extrabold text-2xl mb-3 ">
+                    <h1 className="text-primary font-bold font-montserrat text-2xl mb-3 ">
                         {titleCaps}
                     </h1>
-                    <p className='font-light text-sm'>
+                    <p className='text-sm font-light'>
                         {text[0]}
                     </p>
 

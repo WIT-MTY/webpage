@@ -23,7 +23,7 @@ const NavDesktop = () => {
     return (
         <>
         
-            <div className="z-50 fixed w-full invisible h-0 sm:h-auto sm:visible flex flex-row justify-between py-2 px-7 items-center bg-white border-b-neutral-200 border">
+            <div className="font-montserrat z-50 fixed w-full invisible h-0 sm:h-auto sm:visible flex flex-row justify-between py-2 px-7 items-center bg-white border-b-neutral-200 border">
                 <div onClick={handleClick}>
                     <Logo />
                 </div>

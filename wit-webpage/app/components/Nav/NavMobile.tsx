@@ -24,7 +24,7 @@ const NavMobile = () => {
     }
 
     return (
-        <div className="visible sm:invisible">
+        <div className="visible sm:invisible font-montserrat">
             <div className="w-full z-50 bg-custom-dark-gray fixed p-4 text-white bg-indigo-950 text-2xl" onClick={() => setOpen(!open)}>
                 <FiMenu />
                 {open && (
