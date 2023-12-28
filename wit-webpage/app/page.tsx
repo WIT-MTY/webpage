@@ -26,20 +26,6 @@ export default function Home() {
           <Info right title="Proyectos" button="Ir a proyectos" image="/images/proyectos.jpeg" href="/proyectos" description="El grupo estudiantil realiza diversas actividades y eventos durante el semestre: conferencias, Journey to Internship, talleres, Día de la Mujer, entre otros. \¡Conoce los proyectos!" />
         </Section>
 
-        {/* <div className="flex flex-row justify-center">
-        
-          <div className="basis-1/2 ">
-
-            <div className="w-full my-10 aspect-video relative">
-              <Image className='object-center object-cover' src="/images/wit.png" fill alt="wit" />
-            </div>
-
-            <hr className="w-auto " />
-            
-            <hr />
-          </div>
-
-        </div> */}
         <Footer />
       </div>
     </main>
