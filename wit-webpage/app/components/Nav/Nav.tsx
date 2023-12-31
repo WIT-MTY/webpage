@@ -6,10 +6,13 @@ const Nav = ({ children }: { children: ReactNode }) => {
 
 
     return (
-        <div className="w-full fixed top-0 gap-0">
+        <div className="w-full top-0 gap-0 z-50">
             <NavMobile />
             <NavDesktop />
+
+            <div className="pt-24">
             {children}
+            </div>
         </div>
     )
 }

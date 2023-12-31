@@ -7,7 +7,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ onClick, label }) => {
     return (
-        <button onClick={onClick} className="bg-indigo-950 rounded-2xl py-2 h-min px-6 text-white font-extralight text-sm hover:bg-indigo-900">
+        <button onClick={onClick} className="font-montserrat bg-indigo-950 rounded-2xl py-2 h-min px-6 text-white font-extralight text-sm hover:bg-indigo-900">
             {label}
         </button>
     )

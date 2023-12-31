@@ -3,12 +3,16 @@
 export const useRoutes = () => {
     const routes = [
        {
+            label: "INICIO",
+            href: "/"
+       },
+       {
            label: "PROYECTOS",
            href: "/proyectos"
        },
        {
            label: "SERVICIO SOCIAL",
-           href: "/servicio"
+           href: "/serviciosocial"
        },
        {
            label: "PATROCINIOS",
