@@ -8,7 +8,7 @@ export const useRoutes = () => {
        },
        {
            label: "SERVICIO SOCIAL",
-           href: "/servicio"
+           href: "/serviciosocial"
        },
        {
            label: "PATROCINIOS",
