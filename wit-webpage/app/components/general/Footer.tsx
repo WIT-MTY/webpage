@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/82364150/" target="_blank">
                 <FaLinkedin />
             </a>
-            <a href="" target="_blank">
+            <a href="https://www.facebook.com/womenintechmx?mibextid=2JQ9oc" target="_blank">
                 <FaFacebook />
             </a>
             <a href="https://instagram.com/wit.mty?igshid=YmMyMTA2M2Y=" target="_blank">

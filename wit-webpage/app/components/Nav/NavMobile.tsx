@@ -11,17 +11,9 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 const NavMobile = () => {
-    const [selected, setSelected] = useState(0);
     const [open, setOpen] = useState(false);
     const routes = useRoutes();
-    const router = useRouter();
 
-    const handleClick = () => {
-        router.push("/");
-    }
-    const handleContacto = () => {
-        router.push("/contacto");
-    }
 
     return (
         <div className="visible sm:invisible font-montserrat">
@@ -30,8 +22,9 @@ const NavMobile = () => {
                 {open && (
                     <div className="flex flex-col items-center py-4 px-5 bg-custom-dark-gray w-full">
                         {routes.map((route, key) => (
-                            <NavElement key={key} label={route.label} href={route.href} mobile/>
+                            <NavElement key={key} label={route.label} href={route.href} mobile />
                         ))}
+                        <NavElement label="CONTÁCTANOS" href="/contacto" mobile />
                     </div>
                 )}
             </div>
@@ -41,17 +34,7 @@ const NavMobile = () => {
                 </a>
             </div>
         </div>
-        // <div className="flex flex-row justify-between py-3 px-7 items-center">
-        //     <div onClick={handleClick}>
-        //         <Logo />
-        //     </div>
-        //     <div className="flex flex-row gap-4">
-        //         {routes.map((route) => (
-        //             <NavElement label={route.label} href={route.href} />
-        //         ))}
-        //     </div>
-        //     <NavButton label="CONTÁCTANOS" onClick={handleContacto} />
-        // </div>
+
     )
 }
 

@@ -10,8 +10,8 @@ const Nav = ({ children }: { children: ReactNode }) => {
             <NavMobile />
             <NavDesktop />
 
-            <div className="pt-24">
-            {children}
+            <div className="sm:pt-24 pt-16">
+                {children}
             </div>
         </div>
     )
