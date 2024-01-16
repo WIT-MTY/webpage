@@ -19,8 +19,10 @@ const Contacto = () => {
                         <ContactIcon Icon={FaRegEnvelope} title="Correo electrónico" media="wit.mty@gmail.com" url="wit.mty@gmail.com" mail />
                         <ContactIcon Icon={FiInbox} title="Redes Sociales" media="@wit.mty" url="https://www.instagram.com/wit.mty/" />
                     </div>
+                    
                 </div>
             </div>
+
             <Footer />
         </div>
     )
