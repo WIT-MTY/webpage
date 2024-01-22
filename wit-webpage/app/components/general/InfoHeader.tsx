@@ -25,26 +25,22 @@ const InfoHeader: React.FC<InfoHeaderProps> = ({ title, description }) => {
     }
 
     return (
-        <div className='w-auto font-montserrat tracking-wide'>
-            <div className="flex flex-col sm:flex-row justify-between gap-10">
-                <div className={clsx(
-                    "basis-auto flex flex-col",
-                )}>
-                    <h1 className="text-primary font-bold font-montserrat text-5xl mb-3 ">
-                        {titleCaps}
-                    </h1>
+        <div className={clsx(
+            "basis-auto flex flex-col",
+        )}>
+            <h1 className="text-primary font-bold font-montserrat text-5xl mb-3 ">
+                {titleCaps}
+            </h1>
 
-                    <p className='text-slate-600 text-base font-thin'>
-                        {text[0]}
-                    </p>
+            <p className='text-slate-600 text-base font-extralight'>
+                {text[0]}
+            </p>
 
-                    {text.length > 1 && (
-                        <p className='text-slate-600 font-thin text-base mt-3'>
-                            {text[1]}
-                        </p>
-                    )}
-                </div>
-            </div>
+            {text.length > 1 && (
+                <p className='text-slate-600 text-base font-extralight mt-3'>
+                    {text[1]}
+                </p>
+            )}
         </div>
     )
 }
