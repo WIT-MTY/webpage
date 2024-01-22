@@ -4,6 +4,12 @@ import CenteredRectangle from "@/app/components/general/CenteredRectangle";
 import Footer from "@/app/components/general/Footer";
 
 export default function PageSponsoring() {
+    const sponsoringImages = [
+        "/images/MongoDB.png",
+        "/images/Wizeline.png",
+        "/images/ApexSystems.png",
+    ];
+
     return (
         <main>
             <div className="overflow-scroll">
@@ -14,8 +20,8 @@ export default function PageSponsoring() {
                 </Section>
 
                 <Section>
-                    <div className="mb-10 container mx-auto">
-                        <CenteredRectangle title="Nuestros aliados" description="¡Gracias a las empresas patrocinadoras por hacer posibles los eventos del grupo!" images="/images/MongoDB.png"/>
+                    <div className="mb-10">
+                        <CenteredRectangle title="Nuestros aliados" description="¡Gracias a las empresas patrocinadoras por hacer posibles los eventos del grupo!" images={sponsoringImages}/>
                     </div>
                 </Section>
 
