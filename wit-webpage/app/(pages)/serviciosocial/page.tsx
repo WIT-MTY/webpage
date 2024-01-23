@@ -1,29 +1,29 @@
+import Header2sub from "@/app/components/header2sub"
+import Footer from "@/app/components/general/Footer"
+import Carousel from "@/app/components/carousel"
+import React from "react"
 
-export default function Home() {
+
+const Page = () => {
+
+
   return (
-    <main>
-    
-      <img src="" />
-
-      <br></br>
-      <br></br>
-      <br></br>
-
       <div>
-        <table align="center">
-          <tbody>
-          <tr>
-          <td align="left">
-          <p >¿Qué es WitCode?</p>
-          </td>
-          <td> <p> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; </p> </td>
-          <td>
-            adios
-          </td>
-          </tr>
-          </tbody>
-        </table>
+         <div className=".py-40">
+          <Header2sub
+           titulo={"SERVICIO SOCIAL"} 
+           subtitulo={"OBJETIVO"} 
+           texto={"Esto se va a arreglar jiji"}/>
+           </div>
+            <div>
+              <Carousel></Carousel>
+            </div>
+
+           <div>
+            <Footer></Footer>
+           </div>
       </div>
-    </main>
   )
 }
+
+export default Page
