@@ -6,7 +6,6 @@ import React from "react"
 
 const Page = () => {
 
-
   return (
       <div>
          <div className=".py-40">
@@ -20,7 +19,7 @@ const Page = () => {
             </div>
 
            <div>
-            <Footer></Footer>
+            <Footer/>
            </div>
       </div>
   )

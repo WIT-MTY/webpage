@@ -14,12 +14,7 @@ Main webpage for Women in Tech
 git clone https://github.com/WIT-MTY/webpage.git
 ```
 
-2. Go to the project directory
-```bash
-cd webpage
-```
-
-3. Create a `.env` file in the root directory of the project and add the following environment variables (if env variables are used)
+2. Create a `.env` file in the root directory of the project and add the following environment variables (if env variables are used)
 ```bash
 cp .env.example .env
 ```
@@ -37,6 +32,21 @@ npm install
 2. Run the development server
 ```bash
 npm run dev
+```
+## Branches
+1. Check current branch
+```bash
+git branch
+```
+
+2. Move to another branch
+```bash
+git checkout branch_name
+```
+
+3. Create a new branch
+```bash
+git checkout -b branch_name
 ```
 
 ## Deploy or save changes
