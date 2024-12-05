@@ -22,17 +22,27 @@ cp .env.example .env
 
 
 ## Run
-1. Install dependencies
+1. Check for latest changes
 ```bash
 git fetch
 git pull
+```
+
+2. Install dependencies
+```bash
 npm install
 ```
 
-2. Run the development server
+3. Run the development server
 ```bash
 npm run dev
 ```
+
+4. Check if it builds
+```bash
+npm run build
+```
+
 ## Branches
 1. Check current branch
 ```bash
@@ -65,10 +75,7 @@ git commit -m "Description of change"
 git push
 ```
 
-4. Check if it builds
-```bash
-npm run build
-```
+
 
 # Development Team
 
