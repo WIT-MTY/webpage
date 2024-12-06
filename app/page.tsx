@@ -9,9 +9,20 @@ export default function Home() {
       <div className="overflow-scroll">
 
         <Section>
-            <div className="my-10 aspect-video relative">
-              <Image className='object-center object-cover' src="/images/wit.png" fill alt="wit" />
-            </div>
+          <div className="my-10 relative">
+            <img
+              className="object-center object-cover w-full block"
+              src="/images/wit.png"
+              alt="wit"
+            />
+            <img
+              className="object-center object-cover w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="/images/logo-white.png"
+              alt="logo-white"
+            />
+          </div>
+          {/* <div className="my-10 aspect-video relative">
+          </div> */}
         </Section>
 
         <hr />
