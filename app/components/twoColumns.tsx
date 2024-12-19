@@ -12,28 +12,28 @@ interface TwoColumnsProps {
 
 const TwoColumns: React.FC<TwoColumnsProps> = ({ columns }) => {
   return (
-    <div className="flex flex-row items-center justify-center gap-[50px] w-full h-full p-[19px_0_19px_19px]">
+    <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 w-full h-full p-4">
       {columns.map((column, index) => (
         <div
           key={index}
-          className="flex-1 p-0 h-full flex flex-col items-center justify-center"
+          className="flex-1 flex flex-col items-center justify-center"
         >
           <div
-            className="w-full h-[320px] w-[390px] rounded-[20px] shadow-[0px_4px_20px_8px_rgba(0,0,0,0.2)] bg-white flex flex-col p-6"
+            className="w-full max-w-[90%] md:max-w-[390px] rounded-lg shadow-lg bg-white flex flex-col p-6 h-full"
           >
             {/* Heading */}
             <h3
-              className="flex items-center font-montserrat justify-center mt-[15px] mb-[-3px] text-[#4703a6] font-bold text-[32px] leading-[38px]"
+              className="flex items-center font-montserrat justify-center mt-4 mb-2 text-[#4703a6] font-bold text-xl md:text-2xl leading-tight"
             >
               {column.heading}
             </h3>
 
             {/* List */}
-            <ul className="mt-[10px] px-[40px] w-full list-disc">
+            <ul className="mt-4 px-4 w-full list-disc flex-1">
               {column.items.map((item, idx) => (
                 <li
                   key={idx}
-                  className="text-slate-600 font-montserrat font-thin text-base mt-3 ##1a1b1f"
+                  className="text-slate-600 font-montserrat font-light text-sm md:text-base mt-2"
                 >
                   {item}
                 </li>
@@ -42,7 +42,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({ columns }) => {
 
             {/* Optional Text */}
             {column.optionalText && (
-              <p className="text-slate-600 font-montserrat font-thin text-base mt-3 ##1a1b1f">
+              <p className="text-slate-600 font-montserrat font-light text-sm md:text-base mt-4">
                 {column.optionalText}
               </p>
             )}
