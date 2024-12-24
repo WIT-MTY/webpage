@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         'primary' : '#4703a6',
         'secondary' : '#1e1b4b',
+        'hack4her-bg' : '#A72A8E',
+        'hack4her-font' : '#FF3E7F'
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],

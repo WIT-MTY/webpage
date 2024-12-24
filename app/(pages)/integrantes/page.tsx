@@ -31,7 +31,7 @@ const Integrantes = () => {
 
 
     return (
-        <div className="h-full relative">
+        <div className="pt-24 h-full relative">
             <div className="absolute bg-purple-500 rounded-full w-40 md:w-72 aspect-square -z-10 blur-xl md:blur-3xl opacity-50 right-6 md:top-20" />
             <div className="absolute bg-purple-500 rounded-full w-40 md:w-80 aspect-square -z-10 blur-2xl md:blur-3xl opacity-50 left-20 top-1/3" />
             <div className="absolute bg-purple-500 rounded-full w-40 md:w-72 aspect-square -z-10 blur-2xl md:blur-3xl opacity-50 right-20 bottom-40" />
