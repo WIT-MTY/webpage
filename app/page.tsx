@@ -5,7 +5,7 @@ import Section from "./components/general/Section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-24">
       <div className="overflow-scroll">
 
         <Section>
@@ -21,8 +21,7 @@ export default function Home() {
               alt="logo-white"
             />
           </div>
-          {/* <div className="my-10 aspect-video relative">
-          </div> */}
+
         </Section>
 
         <hr />

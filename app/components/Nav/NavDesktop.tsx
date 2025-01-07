@@ -22,12 +22,11 @@ const NavDesktop = () => {
 
     return (
         <>
-        
-            <div className="font-montserrat z-50 fixed w-full invisible h-0 sm:h-auto sm:visible flex flex-row justify-between py-2 px-7 items-center bg-white border-b-neutral-200 border">
+            <div className="font-montserrat z-50 fixed w-full invisible h-0 md:h-auto md:visible flex flex-row justify-between py-2 px-7 items-center bg-white border-b-neutral-200 border">
                 <div onClick={handleClick}>
                     <Logo />
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row gap-2 lg:gap-4">
                     {routes.map((route, key) => (
                         <NavElement key={key} label={route.label} href={route.href} />
                     ))}
@@ -35,7 +34,7 @@ const NavDesktop = () => {
                 <NavButton label="CONTÁCTANOS" onClick={handleContacto} />
             </div>
 
-            
+
         </>
     )
 }

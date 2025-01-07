@@ -21,6 +21,10 @@ export const useRoutes = () => {
        {
            label: "INTEGRANTES",
            href: "/integrantes"
+       },
+       {
+        label: "HACK4HER",
+        href: "/hack4her"
        }
    
    ]

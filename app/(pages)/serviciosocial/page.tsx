@@ -7,7 +7,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div>
+    <div className="pt-24">
       {/* Header Section */}
       <Section>
         <div className="mt-[50px]">

@@ -4,7 +4,7 @@ import InfoHeader from "@/app/components/general/InfoHeader";
 
 export default function PageSponsoring() {
     return (
-        <main>
+        <main className="pt-24">
             <div className="overflow-scroll">
                 <Section>
                     <div className="mt-4 mb-8 pt-8">

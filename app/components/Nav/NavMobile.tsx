@@ -24,7 +24,7 @@ const NavMobile = () => {
     }
 
     return (
-        <div className="visible sm:invisible font-montserrat">
+        <div className="visible md:invisible font-montserrat">
             <div className="w-full z-50 bg-custom-dark-gray fixed p-4 text-white bg-indigo-950 text-2xl" onClick={() => setOpen(!open)}>
                 <FiMenu />
                 {open && (
@@ -41,17 +41,6 @@ const NavMobile = () => {
                 </a>
             </div>
         </div>
-        // <div className="flex flex-row justify-between py-3 px-7 items-center">
-        //     <div onClick={handleClick}>
-        //         <Logo />
-        //     </div>
-        //     <div className="flex flex-row gap-4">
-        //         {routes.map((route) => (
-        //             <NavElement label={route.label} href={route.href} />
-        //         ))}
-        //     </div>
-        //     <NavButton label="CONTÁCTANOS" onClick={handleContacto} />
-        // </div>
     )
 }
 
