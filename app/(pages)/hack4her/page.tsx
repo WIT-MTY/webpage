@@ -15,16 +15,13 @@ const Hack4HerPage = () => {
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-6xl mb-5">
                         ¿Qué es Hack4Her?
                         </h1>
-                        <p className="text-black text-3xl leading-relaxed mt-4">
+                        <p className="text-black text-2xl leading-loose mt-4">
                         Es un evento nacional que conjunta 3 días de crecimiento profesional para mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.
-                        </p>
-                        <p className="text-black text-3xl leading-relaxed mt-4">
+                        <br/>
                         Talleres de actualización en tecnologías y negocios digitales.
-                        </p>
-                        <p className="text-black text-3xl leading-relaxed mt-4">
+                        <br/>
                         Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.
-                        </p>
-                        <p className="text-black text-3xl leading-relaxed mt-4">
+                        <br/>
                         Hackathon con 3 empresas líderes que desafiarán a las participantes con distintas problemáticas tecnológicas.
                         </p>
                     </div>
