@@ -11,7 +11,7 @@ const Hack4HerPage = () => {
             </div>
             <SectionHack4Her>
                 <div className="h-screen w-full relative px-10 flex items-center">
-                    <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg">
+                    <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg z-10">
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-5">
                         ¿Qué es Hack4Her?
                         </h1>
@@ -25,8 +25,8 @@ const Hack4HerPage = () => {
                         Hackathon con 3 empresas líderes que desafiarán a las participantes con distintas problemáticas tecnológicas.
                         </p>
                     </div>
-                    <div className="absolute top-28 right-20 w-2/5 h-auto">
-                        <Image src={robot2} alt="Robot 2" className= "w-5/6"/>   
+                    <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
+                        <Image src={robot2} alt="Robot 2" className= "w-5/6 "/>   
                     </div> 
                 </div>
             </SectionHack4Her>
