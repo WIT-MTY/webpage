@@ -9,7 +9,7 @@ const Schedule = () => {
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl"> Horario </h1> 
                     </div>    
                 </div>
-                <div className="mt-24 grid md:grid-cols-3 gap-x-16 gap-y-8 place-items-center">
+                <div className="mt-24 flex flex-wrap gap-28 justify-center">
                     <div className="bg-white p-6 rounded-2xl shadow-lg w-128 h-auto">
                         <h3 className="text-xl text-center text-purple-800 font-semibold font-montserrat">Viernes 16</h3>
                         <div className="mt-4 space-y-2">
