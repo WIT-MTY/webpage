@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import SliderComponent from '../../components/Slider';
+import Slider from '@/app/components/slider';
 import Section from '@/app/components/general/Section';
 import Footer from '@/app/components/general/Footer';
 import Header2sub from '@/app/components/header2sub';
@@ -22,7 +22,7 @@ const ProyectosPage: React.FC = () => {
           </div>
         </Section>
 
-        <SliderComponent />
+        <Slider />
 
         <Footer />
       </div>
