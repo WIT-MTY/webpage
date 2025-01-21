@@ -4,10 +4,10 @@ import InfoHeader from "@/app/components/general/InfoHeader";
 
 export default function PageSponsoring() {
     return (
-        <main>
+        <main className="pt-24">
             <div className="overflow-scroll">
                 <Section>
-                    <div className="mt-4 aspect-video relative pt-8 -mb-12">
+                    <div className="mt-4 mb-8 pt-8">
                         <InfoHeader title="Patrocinios" description="El grupo estudiantil ha colaborado con diferentes empresas de alcance nacional e internacional para el patrocinio de nuestros proyectos, eventos y servicio social. \ Durante el semestre febrero a junio del 2025, tenemos la oportunidad de colaborar con las siguientes empresas para el patrocinio de Hack4Her."/>
                     </div>
                 </Section>
