@@ -1,5 +1,6 @@
 import Counter from "@/app/components/hack4her/countdown";
-import QueEsHack4Her from "@/app/components/hack4her/QueEsHack4Her";
+import Definition from "@/app/components/hack4her/QueEsHack4Her"
+import Scheme from "@/app/components/hack4her/schedule"
 
 const Hack4HerPage = () => {
     return (
@@ -7,7 +8,8 @@ const Hack4HerPage = () => {
             <div className="bg-hack4her-bg pt-6">
                 <Counter />
             </div>
-            <QueEsHack4Her />
+            <Definition />
+            <Scheme />
         </>
     )
 }
