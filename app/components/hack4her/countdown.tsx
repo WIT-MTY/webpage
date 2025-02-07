@@ -19,7 +19,7 @@ const calculateTimeLeft = (targetDate: Date) => {
 };
 
 const Countdown = () => {
-    const targetDate = new Date("2025-05-16T15:00:00Z");
+    const targetDate = new Date("2025-05-30T15:00:00Z");
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
     useEffect(() => {
@@ -52,7 +52,7 @@ const Countdown = () => {
                                 )}
                         </div>
                         <div className="text-hack4her-font text-2xl md:text-3xl">
-                            MAYO 16,17 y 18
+                            MAYO 30 - JUNIO 1
                         </div>
                         <div className="text-hack4her-bg text-lg md:text-xl font-light">
                             By Women in Tech

@@ -8,7 +8,7 @@ import FAQS from '@/app/components/hack4her/textCarousel'
 const Hack4HerPage = () => {
     return (
         <>
-            <div className="bg-hack4her-bg py-6">
+            <div className="bg-hack4her-bg pb-20 pt-6">
                 <Counter />
                 <Definition />
                 <Scheme />
