@@ -8,13 +8,13 @@ import FAQS from '@/app/components/hack4her/textCarousel'
 const Hack4HerPage = () => {
     return (
         <>
-            <div className="bg-hack4her-bg pt-6">
+            <div className="bg-hack4her-bg py-6">
                 <Counter />
-              <Sponsor />
+                <Definition />
+                <Scheme />
+                <FAQS />
+                <Sponsor />
             </div>
-            <Definition />
-            <Scheme />
-            <FAQS />
         </>
     )
 }
