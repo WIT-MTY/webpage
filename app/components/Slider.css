@@ -1,0 +1,134 @@
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative; 
+  margin-bottom: 100px;
+}
+
+.slick-center .slide {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.slick-center .background-image {
+  filter: blur(2px) brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 15px;
+  padding: 35px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.slide-subheading-container {
+  align-items: top;
+}
+
+.slide-subheading {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-size: .8rem;
+  color: #fff;
+  margin: 0;
+}
+
+.slide-title {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+.slide-description {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #ddd; 
+  margin: 0;
+}
+.slick-prev,
+.slick-next {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.28); 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(0, 0, 0, 0.8); 
+  color: #000;
+}
+
+#slick-next:active {
+  background: rgba(0, 0, 0, 0.8); 
+  color: #000;
+}
+#slick-next:active {
+  background: rgba(0, 0, 0, 0.8); 
+  color: #000;
+}
+.slick-dots {
+  bottom: -40px;
+  z-index: 3;
+}
+
+.slick-dots li button:before {
+  color: #00000028; 
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000000; 
+  opacity: 1;
+}
