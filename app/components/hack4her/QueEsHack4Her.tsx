@@ -11,13 +11,13 @@ const QueEsHack4Her = () => {
                         ¿Qué es Hack4Her?
                         </h1>
                         <p className="text-black text-xl leading-loose mt-4">
-                        Es un evento nacional que conjunta 3 días de crecimiento profesional para mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.
+                        Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.
                         <br/>
                         Talleres de actualización en tecnologías y negocios digitales.
                         <br/>
                         Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.
                         <br/>
-                        Hackathon con 3 empresas líderes que desafiarán a las participantes con distintas problemáticas tecnológicas.
+                        Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.
                         </p>
                     </div>
                     <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
