@@ -19,7 +19,8 @@ const calculateTimeLeft = (targetDate: Date) => {
 };
 
 const Countdown = () => {
-    const targetDate = new Date("2025-05-30T15:00:00Z");
+    // Set countdown date
+    const targetDate = new Date("2025-05-31T15:00:00Z");
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
     useEffect(() => {
