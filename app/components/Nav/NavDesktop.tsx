@@ -3,40 +3,42 @@ import { useRoutes } from "@/app/utils/hooks/useRoutes";
 import Logo from "../general/Logo";
 import NavButton from "./NavButton";
 import NavElement from "./NavElement";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-
-
 const NavDesktop = () => {
-    const [selected, setSelected] = useState(0);
     const routes = useRoutes();
     const router = useRouter();
 
     const handleClick = () => {
         router.push("/");
     }
+
     const handleContacto = () => {
-        router.push("/");
+        router.push("/contacto"); 
     }
 
     return (
-        <>
-            <div className="font-montserrat z-50 fixed w-full invisible h-0 md:h-auto md:visible flex flex-row justify-between py-2 px-7 items-center bg-white border-b-neutral-200 border">
-                <div onClick={handleClick}>
+        <div className="font-montserrat z-50 fixed w-full md:h-auto flex items-center py-3 px-6 md:px-10 bg-white border-b border-neutral-200">
+            {/* Left: Logo */}
+            <div className="flex justify-start w-auto">
+                <div onClick={handleClick} className="cursor-pointer">
                     <Logo />
                 </div>
-                <div className="flex flex-row gap-2 lg:gap-4">
-                    {routes.map((route, key) => (
-                        <NavElement key={key} label={route.label} href={route.href} />
-                    ))}
-                </div>
-                <NavButton label="CONTÁCTANOS" onClick={handleContacto} />
             </div>
 
+            {/* Center: Navigation Links (Using Absolute Centering) */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-row gap-8">
+                {routes.map((route, key) => (
+                    <NavElement key={key} label={route.label} href={route.href} />
+                ))}
+            </div>
 
-        </>
-    )
-}
+            {/* Right: Button */}
+            <div className="flex justify-end w-auto ml-auto">
+                <NavButton label="CONTÁCTANOS" onClick={handleContacto} />
+            </div>
+        </div>
+    );
+};
 
 export default NavDesktop;

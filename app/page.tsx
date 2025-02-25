@@ -27,7 +27,7 @@ export default function Home() {
         <hr />
 
         <Section>
-          <Info title="Sobre nosotras" button="Conócenos" image="/images/WIT_2025.JPG" href="/integrantes" description="Women in Technology es un grupo estudiantil del Tecnológico de Monterrey, Campus Monterrey. \ Somos una comunidad de mujeres que busca atender la brecha de género en el ámbito de la tecnología." />
+          <Info title="Sobre nosotras" button="Conócenos" image="/images/WIT_2025.jpg" href="/integrantes" description="Women in Technology es un grupo estudiantil del Tecnológico de Monterrey, Campus Monterrey. \ Somos una comunidad de mujeres que busca atender la brecha de género en el ámbito de la tecnología." />
         </Section>
 
         <hr />

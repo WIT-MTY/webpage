@@ -1,11 +1,11 @@
-
+import Link from "next/link";
 
 const Logo = () => {
     return (
-        <div>
-            <img src="/images/Logo.png" alt="Logo" className="w-20" />
-        </div>
-    )
-}
+        <Link href="/">
+            <img src="/images/Logo.png" alt="Logo" className="w-20 cursor-pointer" />
+        </Link>
+    );
+};
 
 export default Logo;
