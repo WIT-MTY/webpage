@@ -24,16 +24,16 @@ const slides = [
     description: 'El grupo organiza una comida del día de la mujer con estudiantes, profesoras, entre otros.',
   },
   {
-    subheading: 'ANUAL',
-    image: '/images/proyectos/proy10.jpg',
+    subheading: 'PROXIMAMENTE',
+    image: '/images/proyectos/hack4her_flyer.png',
     title: 'Hack4Her',
-    description: 'This is the description for slide 4.',
+    description: 'Hack4Her es un hackathon organizado por mujeres y dirigido a mujeres. El objetivo es fomentar la participación de mujeres en hackathons y en el área de la tecnología.',
   },
   {
-    subheading: 'ANUAL',
-    image: '/images/proyectos/proy5.jpg',
+    subheading: 'PROXIMAMENTE',
+    image: '/images/proyectos/empowerhack_flyer.png',
     title: 'EmpowerHack',
-    description: 'This is the description for slide 5.',
+    description: 'Un hackathon dirijido a chicas de preparatoria con el proposito de fomentar la participación de mujeres en la tecnología desde una edad temprana.',
   },
 ];
 
