@@ -20,7 +20,7 @@ const NavMobile = () => {
         router.push("/");
     }
     const handleContacto = () => {
-        router.push("/contacto");
+        router.push("/");
     }
 
     return (

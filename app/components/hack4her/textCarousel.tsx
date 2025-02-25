@@ -5,16 +5,35 @@ import { GoDotFill } from 'react-icons/go';
 import SectionHack4Her from '@/app/components/hack4her/sectionHack4Her';
 
 const slides = [
-    { question: 'Is the event free to attend?', answer: 'Yes! Food will be provided for the duration of the event. We will also have swag and prizes!' },
-    { question: 'Where is the event? Is it in person or virtual?', answer: 'The event is located in the XXXX Building at INSERT STREET ADDRESS' },
-    { question: "Who can attend? What if I don't have any experience?", answer: "This event is open to any students. It is beginner friendly, with workshops to help you learn during the event." },
-    { question: 'What is the team size limit?', answer: 'You can be on teams of up to 4. We will have a team building activity right after opening ceremony if you need to find team members!' },
-    { question: 'Are there travel reimbursements?', answer: 'We are not able to provide travel reimbursements at this time.' },
-    { question: 'What should I bring?', answer: 'Your laptop, charger, headphones, deodorant, pillow/blanket' },
-    { question: 'When can we start working on our project? Can I work on a previous project?', answer: 'You cannot start until after opening ceremony. You may come up with ideas, but are not allowed to start coding. You cannot work on a previous project, but can use frameworks if you clearly credit them in your readme and differentiate what you made vs what you used.' },
-    { question: 'How many challenges can I apply for?', answer: 'As many as you want!' },
-    { question: 'Do I have to stay overnight?', answer: 'No, you can leave and come back if you would prefer to go to bed.' },
-    { question: 'Will hardware be available?', answer: 'We do not have hardware available, but you are welcome to bring your own. Due to building fire codes, please do not bring soldering kits' }
+    { "question": "¿Es gratis asistir al evento?", "answer": "¡Sí! Además, se proveerán alimentos en el evento." },
+    { "question": "¿Quién puede ir? ¿Y si no tengo experiencia?", "answer": "Este evento está abierto a todos los estudiantes y es amigable para principiantes." },
+    { "question": "¿Hay un máximo de integrantes por equipo?", "answer": "¡Sí! Deben ser equipos de máximo 4 personas." },
+    { "question": "¿Hay reembolsos de viaje?", "answer": "No contamos con ese servicio por el momento." },
+    { "question": "¿Qué debería llevar?", "answer": "Tu laptop, cargador, audífonos, desodorante y una almohada/cobija." },
+    { "question": "¿Cuándo puedo empezar el proyecto? ¿Puedo usar uno anterior?", "answer": "No puedes empezar antes de la ceremonia de inicio. Debes llegar con ideas, pero no puedes trabajar en el proyecto con anterioridad. Tampoco puedes continuar con proyectos previos." },
+    { "question": "¿Cómo me puedo registrar?", "answer": (<>Con este  
+        <a 
+            href="https://forms.gle/bHNVxCZqr47vQd5B6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className='text-hack4her-bg hover:underline font-semibold'> enlace </a> !
+    </>) },
+    { "question": "¿Dónde será el evento?", "answer": (<>    
+        <span className='pb-5'>El evento se llevará a cabo en la preparatoria del Tecnológico de Monterrey Eugenio Garza Lagüera:</span>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.622613015572!2d-100.2760317458173!3d25.61745370847247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf6e6c1769f9%3A0xfa4d66770c9d82aa!2sPrepaTec%20Eugenio%20Garza%20Lag%C3%BCera!5e0!3m2!1ses-419!2smx!4v1739910269492!5m2!1ses-419!2smx" 
+            width="300" 
+            height="200" 
+            style={{border: "4px solid rgb(153, 56, 166)", margin: "auto"}} 
+            allowFullScreen
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+    </>) },
+    { "question": "¿Qué ganan los primeros lugares?", "answer": 
+        (<>1er lugar: iPad 10th Gen <br /> 2do lugar: Nintendo Switch <br /> 3er lugar: Audífonos Sony</>) },
+    { "question": "¿Me tengo que quedar toda la noche?", "answer": "No, puedes irte si prefieres dormir en una cama." },
+    { "question": "¿Habrá hardware disponible?", "answer": "No contamos con una zona de hardware, pero su uso no está prohibido. Sin embargo, por términos de seguridad, favor de no traer kits de soldadura." }
 ];
 
 export default function TextCarousel() {
@@ -31,17 +50,17 @@ export default function TextCarousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 4000);
+        }, 8000);
         return () => clearInterval(interval);
     }, [cIndex]);
 
     return (
         <SectionHack4Her>
-            <div className='relative h-full w-full flex justify-center items-center'>
-                <div className='absolute top-8 h-auto w-auto bg-white shadow-lg rounded-full p-8 m-10'>
-                    <h1 className='font-montserrat text-5xl font-extrabold text-hack4her-bg text-center'>FAQ's</h1>
+            <div className='relative w-full min-h-screen flex flex-col items-center py-20'>
+                <div className='relative bg-white shadow-lg rounded-full px-8 py-4 mb-10'>
+                    <h1 className='font-montserrat text-4xl md: text-5xl font-extrabold text-hack4her-bg text-center'>FAQ's</h1>
                 </div>
-                <div className="absolute w-5/6 h-auto flex flex-col justify-center items-center text-center bg-white rounded-2xl shadow-lg p-24 m-10">
+                <div className="relative w-5/6 max-w-3xl h-auto flex flex-col justify-center items-center text-center bg-white rounded-2xl shadow-lg p-12 md:p-24">
                     {/* Slide actual */}
                     <h2 className="text-xl font-semibold">{slides[cIndex].question}</h2>
                     <p className="mt-4 text-gray-600">{slides[cIndex].answer}</p>
@@ -49,7 +68,7 @@ export default function TextCarousel() {
                     {/* Botón Izquierdo */}
                     <button 
                         onClick={prevSlide} 
-                        className="absolute left-5 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+                        className=" absolute left-5 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
                     >
                         <SlArrowLeft size={25} />
                     </button>
@@ -57,7 +76,7 @@ export default function TextCarousel() {
                     {/* Botón Derecho */}
                     <button 
                         onClick={nextSlide} 
-                        className="absolute right-5 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+                        className=" absolute right-5 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
                     >
                         <SlArrowRight size={25} />
                     </button>
