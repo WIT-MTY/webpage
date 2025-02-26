@@ -18,17 +18,31 @@ const calculateTimeLeft = (targetDate: Date) => {
     return timeLeft;
 };
 
+
 const Countdown = () => {
     const targetDate = new Date("2025-05-30T15:00:00Z");
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
+    const [showArrow, setShowArrow] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setTimeLeft(calculateTimeLeft(targetDate));
-        }, 1000);
+        const handleScroll = () => {
+            if (window.scrollY > 5) {
+                setShowArrow(false); // Hide arrow when user scrolls down
+            } else {
+                setShowArrow(true); // Show arrow when user scrolls back up
+            }
+        };
 
-        return () => clearTimeout(timer);
-    });
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const scrollToNextSection = () => {
+        const nextSection = document.getElementById("definition-section");
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return (
         <SectionHack4Her>
@@ -63,6 +77,24 @@ const Countdown = () => {
                     </div>
                 </div>
                 <Image src={robot} alt="robot" className="absolute left-10 bottom-0 w-1/3" />
+                {/* Bouncing Arrow - Only Visible if showArrow is true */}
+                {showArrow && (
+                    <div
+                        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce transition-opacity duration-300"
+                        onClick={scrollToNextSection}
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-10 h-10 text-hack4her-font"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                )}
             </div>
         </SectionHack4Her>
     )

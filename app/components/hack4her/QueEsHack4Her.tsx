@@ -1,8 +1,22 @@
+"use client";
+
 import SectionHack4Her from "@/app/components/hack4her/sectionHack4Her";
 import Image from "next/image";
 import robot2 from "../../../public/images/hack4her/robot2.png"
+import { useEffect, useState } from "react";
+
 
 const QueEsHack4Her = () => {
+    const [showArrow, setShowArrow] = useState(true);
+
+    const scrollToNextSection = () => {
+        const nextSection = document.getElementById("schedule-section");
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+
     return(
         <SectionHack4Her>
                 <div className="h-screen w-full relative px-10 flex items-center">
@@ -19,12 +33,46 @@ const QueEsHack4Her = () => {
                         <br/>
                         Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.
                         </p>
+
+                        {/* Bouncing Arrow */}
+                       <div
+                        className="mt-8 flex flex-row items-center gap-2 cursor-pointer animate-bounce-horizontal transition-opacity duration-300"
+                        onClick={scrollToNextSection}
+                        >
+                        <span className="text-hack4her-bg font-bold text-lg">Conoce el horario</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-10 h-10 text-hack4her-bg transform -rotate-90"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </div>
-                    <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
-                        <Image src={robot2} alt="Robot 2" className= "w-5/6 "/>   
-                    </div> 
-                </div>
-            </SectionHack4Her>
+               </div>
+                <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
+                    <Image src={robot2} alt="Robot 2" className= "w-5/6 "/>   
+                </div> 
+            </div>
+
+            <style jsx global>{`
+                @keyframes bounce-horizontal {
+                    0%, 100% {
+                        transform: translateX(0);
+                    }
+                    50% {
+                        transform: translateX(10px);
+                    }
+                }
+
+                .animate-bounce-horizontal {
+                    animation: bounce-horizontal 1.5s infinite;
+                }
+            `}
+            </style>
+        </SectionHack4Her>
     )
 }
 

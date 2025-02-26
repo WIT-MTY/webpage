@@ -11,8 +11,12 @@ const Hack4HerPage = () => {
         <>
             <div className="bg-hack4her-bg pb-20 pt-6">
                 <Counter />
-                <Definition />
-                <Scheme />
+                <div id="definition-section">
+                    <Definition />
+                </div>
+                <div id="schedule-section">
+                    <Scheme />
+                </div>
                 <FAQS />
                 <Sponsor />
             </div>
