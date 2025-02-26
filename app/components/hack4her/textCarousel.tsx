@@ -56,7 +56,7 @@ export default function TextCarousel() {
 
     return (
         <SectionHack4Her>
-            <div className='relative w-full min-h-screen flex flex-col items-center py-20'>
+            <div className='relative w-full flex flex-col items-center py-20 mt-40'>
                 <div className='relative bg-white shadow-lg rounded-full px-8 py-4 mb-10'>
                     <h1 className='font-montserrat text-4xl md: text-5xl font-extrabold text-hack4her-bg text-center'>FAQ's</h1>
                 </div>

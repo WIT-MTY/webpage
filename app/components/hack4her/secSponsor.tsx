@@ -28,9 +28,9 @@ const Sponsor = () => {
                         alt="Logo Arca Continental" 
                         className="w-3/4 max-w-sm mt-3" 
                     />
-                    <h2 className="text-hack4her-bg font-montserrat text-2xl mt-8">
+                    <p className="text-black text-xl mt-4">
                     Gracias, por ser nuestro patrocinador principal en Hack4Her. Su apoyo impulsa el talento femenino en tecnología y nos ayuda a seguir cerrando la brecha de género en STEM. Juntos, estamos creando oportunidades y construyendo un futuro más inclusivo. ¡Gracias por ser parte de esta misión!
-                    </h2>
+                    </p>
                 </div>
             </div>
         </div>
