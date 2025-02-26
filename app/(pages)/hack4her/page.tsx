@@ -4,6 +4,7 @@ import Sponsor from "@/app/components/hack4her/secSponsor";
 import Definition from "@/app/components/hack4her/QueEsHack4Her"
 import Scheme from "@/app/components/hack4her/schedule"
 import FAQS from '@/app/components/hack4her/textCarousel'
+import Footer from "@/app/components/general/Footer";
 
 const Hack4HerPage = () => {
     return (
@@ -15,6 +16,7 @@ const Hack4HerPage = () => {
                 <FAQS />
                 <Sponsor />
             </div>
+            <Footer />
         </>
     )
 }
