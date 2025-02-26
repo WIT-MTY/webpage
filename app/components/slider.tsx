@@ -13,13 +13,13 @@ const slides = [
   },
   {
     subheading: 'ANUAL',
-    image: '/images/proyectos//proy8.png',
+    image: '/images/proyectos/JTI24_5.JPG',
     title: 'Journey to Internship',
     description: 'Las y los estudiantes del Tecnológico de Monterrey son invitados a una serie de conferencias y talleres impartidos por empresas con reconocimiento nacional y/o internacional con el objetivo de prepararse para internships.',
   },
   {
     subheading: 'ANUAL',
-    image: '/images/proyectos/proy7.jpg',
+    image: '/images/proyectos/Desayuno8_1.JPG',
     title: 'Comida día de la mujer',
     description: 'El grupo organiza una comida del día de la mujer con estudiantes, profesoras, entre otros.',
   },
@@ -33,7 +33,7 @@ const slides = [
     subheading: 'PROXIMAMENTE',
     image: '/images/proyectos/empowerhack_flyer.png',
     title: 'EmpowerHack',
-    description: 'Un hackathon dirijido a chicas de preparatoria con el proposito de fomentar la participación de mujeres en la tecnología desde una edad temprana.',
+    description: 'Un hackathon dirijido a chicas de preparatoria con el proposito de fomentar la participación de mujeres en la tecnología desde una temprana edad.',
   },
 ];
 

@@ -33,7 +33,7 @@ export default function Home() {
         <hr />
 
         <Section>
-          <Info right title="Proyectos" button="Ir a proyectos" image="/images/proyectos.jpeg" href="/proyectos" description="El grupo estudiantil realiza diversas actividades y eventos durante el semestre: conferencias, Journey to Internship, talleres, Día de la Mujer, entre otros. \¡Conoce los proyectos!" />
+          <Info right title="Proyectos" button="Ir a proyectos" image="/images/proyectos/JTI24_3.JPG" href="/proyectos" description="El grupo estudiantil realiza diversas actividades y eventos durante el semestre: conferencias, Journey to Internship, talleres, Día de la Mujer, entre otros. \¡Conoce los proyectos!" />
         </Section>
 
         <Footer />

@@ -54,7 +54,7 @@ const Countdown = () => {
                         <div className="text-hack4her-font text-2xl md:text-3xl">
                             MAYO 30 - JUNIO 1
                         </div>
-                        <div className="pt-4 inline-flex items-center text-lg md:text-2xl font-light gap-x-1">
+                        <div className="pt-4 inline-flex items-center text-lg md:text-2xl  gap-x-1">
                             By <img src="/images/logo-white.png" alt="logo WIT" className="w-20 invert" />
                         </div>
 
