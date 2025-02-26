@@ -1,10 +1,27 @@
+import React from 'react';
+import Section from '@/app/components/general/Section';
+import Footer from '@/app/components/general/Footer';
+import InfoHeader from '@/app/components/general/InfoHeader';
+import ContactInfo from '@/app/components/contactInfo';
+
 const ContactPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <h1 className="text-4xl font-bold text-gray-900">holi</h1>
-            <p className="mt-4 text-lg text-gray-700">Agregar contactos aki</p>
-            {/* Add contact form or details here */}
-        </div>
+        <main className="flex flex-col min-h-screen pt-24">
+            {/* Page Content (Grows to push footer down) */}
+            <div className="flex-grow">
+                <Section>
+                    <div className="mt-4 mb-8 pt-8">
+                        <InfoHeader title="¡Te escuchamos!" description="Nos encantaría saber de ti. Contáctanos por email o envíanos un DM en Instagram y te responderemos con gusto."/>
+                    </div>
+                </Section>
+                <Section>
+                    <ContactInfo />
+                </Section>
+            </div>
+
+            {/* Footer Stays at the Bottom */}
+            <Footer />
+        </main>
     );
 };
 
