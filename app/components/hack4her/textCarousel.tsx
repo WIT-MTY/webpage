@@ -14,7 +14,7 @@ const slides = [
     {
         "question": "¿Cómo me puedo registrar?", "answer": (<>Con este
             <a
-                href="https://forms.gle/bHNVxCZqr47vQd5B6"
+                href="http://tec.rs/registrohack4her"
                 target="_blank"
                 rel="noopener noreferrer"
                 className='text-hack4her-bg hover:underline font-semibold'> enlace </a> !
