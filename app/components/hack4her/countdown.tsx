@@ -36,19 +36,6 @@ const Countdown = () => {
         return () => clearInterval(timer);
     }, []);
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 5) {
-    //             setShowArrow(false); // Hide arrow when user scrolls down
-    //         } else {
-    //             setShowArrow(true); // Show arrow when user scrolls back up
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => window.removeEventListener("scroll", handleScroll);
-    // }, []);
-
     const scrollToNextSection = () => {
         const nextSection = document.getElementById("definition-section");
         if (nextSection) {
