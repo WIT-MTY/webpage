@@ -32,7 +32,7 @@ export default function Carousel() {
         setDirection(slideIndex > currentIndex ? 'right' : 'left');
         setCurrentIndex(slideIndex);
     };
-    
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -48,13 +48,12 @@ export default function Carousel() {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className={`absolute w-full h-full transition-transform duration-700 ease-in-out ${
-                            currentIndex === index
+                        className={`absolute w-full h-full transition-transform duration-700 ease-in-out ${currentIndex === index
                                 ? 'translate-x-0'
                                 : direction === 'right'
-                                ? 'translate-x-full'
-                                : '-translate-x-full'
-                        }`}
+                                    ? 'translate-x-full'
+                                    : '-translate-x-full'
+                            }`}
                         style={{
                             backgroundImage: `url(${slide.url})`,
                             backgroundPosition:
@@ -84,9 +83,8 @@ export default function Carousel() {
                     <div key={slideIndex} onClick={() => goToSlide(slideIndex)}>
                         <GoDotFill
                             size={30}
-                            className={`${
-                                currentIndex === slideIndex ? 'text-blue-500' : ''
-                            }`}
+                            className={`${currentIndex === slideIndex ? 'text-blue-500' : ''
+                                }`}
                         ></GoDotFill>
                     </div>
                 ))}

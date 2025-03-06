@@ -17,28 +17,28 @@ const QueEsHack4Her = () => {
     };
 
 
-    return(
+    return (
         <SectionHack4Her>
-                <div className="h-screen w-full relative px-10 flex items-center">
-                    <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg z-10">
-                        <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-5">
+            <div className="md:h-screen w-full relative md:px-10 flex items-center">
+                <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg z-10">
+                    <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-5">
                         ¿Qué es Hack4Her?
-                        </h1>
-                        <p className="text-black text-xl leading-loose mt-4">
+                    </h1>
+                    <p className="text-black md:text-xl leading-loose mt-4">
                         Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.
-                        <br/>
+                        <br />
                         Talleres de actualización en tecnologías y negocios digitales.
-                        <br/>
+                        <br />
                         Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.
-                        <br/>
+                        <br />
                         Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.
-                        </p>
+                    </p>
 
-                        {/* Bouncing Arrow */}
-                       <div
+                    {/* Bouncing Arrow */}
+                    <div
                         className="mt-8 flex flex-row items-center gap-2 cursor-pointer animate-bounce-horizontal transition-opacity duration-300"
                         onClick={scrollToNextSection}
-                        >
+                    >
                         <span className="text-hack4her-bg font-bold text-lg">Conoce el horario</span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -48,13 +48,13 @@ const QueEsHack4Her = () => {
                             stroke="currentColor"
                             strokeWidth={2}
                         >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
-               </div>
+                </div>
                 <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
-                    <Image src={robot2} alt="Robot 2" className= "w-5/6 "/>   
-                </div> 
+                    <Image src={robot2} alt="Robot 2" className="w-5/6 " />
+                </div>
             </div>
 
             <style jsx global>{`

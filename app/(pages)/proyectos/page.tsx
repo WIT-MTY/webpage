@@ -11,16 +11,16 @@ import Header2sub from '@/app/components/header2sub';
 const ProyectosPage: React.FC = () => {
   return (
     <main>
-      <div className="overflow-scroll">
+      <div className="overflow-scroll p-10 md:pt-24">
         <Section>
-        <div className="mt-[50px] mb-[70px]">
-        <Header2sub
-            titulo={"PROYECTOS"}
-            subtitulo={"\n"}
-            texto={
-             "\n"
-            }
-          />
+          <div className="mt-[50px] mb-[70px]">
+            <Header2sub
+              titulo={"PROYECTOS"}
+              subtitulo={"\n"}
+              texto={
+                "\n"
+              }
+            />
           </div>
         </Section>
 

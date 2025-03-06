@@ -3,7 +3,7 @@ import SectionHack4Her from "@/app/components/hack4her/sectionHack4Her";
 const Schedule = () => {
     return(
         <SectionHack4Her>
-            <div className="relative w-full min-h-screen px-10 py-20 flex flex-col items-center mb-40">
+            <div className="relative w-full md:min-h-screen px-10 py-20 flex flex-col items-center mb-40">
                 <div className="relative text-center">
                     <div className="inline-block bg-white rounded-full shadow-lg px-6 py-4">
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-4xl md:text-5xl"> Horario </h1> 

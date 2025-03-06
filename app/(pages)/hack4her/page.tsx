@@ -14,10 +14,16 @@ const Hack4HerPage = () => {
                 <div id="definition-section">
                     <Definition />
                 </div>
-                <div id="schedule-section">
+                <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
+                <div id="schedule-section mt-80">
                     <Scheme />
                 </div>
+                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
+                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
+                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
+                <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
                 <FAQS />
+                <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
                 <Sponsor />
             </div>
             <Footer />

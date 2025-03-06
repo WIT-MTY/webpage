@@ -1,4 +1,5 @@
 "use client";
+
 import SectionHack4Her from "./sectionHack4Her";
 import Image from "next/image";
 import logo from "../../../public/images/hack4her/hack4her_logo.png";
@@ -21,20 +22,18 @@ const calculateTimeLeft = (targetDate: Date) => {
 
 const Countdown = () => {
     const targetDate = new Date("2025-05-30T15:00:00Z");
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
+    // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
     const [showArrow, setShowArrow] = useState(true);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 5) {
-                setShowArrow(false); // Hide arrow when user scrolls down
-            } else {
-                setShowArrow(true); // Show arrow when user scrolls back up
-            }
-        };
+    const [timeLeft, setTimeLeft] = useState<ReturnType<typeof calculateTimeLeft> | null>(null);
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+    useEffect(() => {
+        setTimeLeft(calculateTimeLeft(targetDate));
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft(targetDate));
+        }, 1000);
+
+        return () => clearInterval(timer);
     }, []);
 
     const scrollToNextSection = () => {
@@ -44,10 +43,18 @@ const Countdown = () => {
         }
     };
 
+    if (!timeLeft) {
+        return (
+            <div className="h-screen flex flex-col items-center justify-center">
+                <div className="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin" />
+            </div>
+        );
+    }
+
     return (
         <SectionHack4Her>
             <div className="w-full h-full md:relative px-10 md:px-0">
-                <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/3">
+                <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/2 pt-20 md:translate-y-1/3">
                     <div className="flex flex-col items-center font-montserrat">
                         <Image src={logo} alt="robot" className="pt-5" />
                         <div className="bg-hack4her-bg px-4 py-2 flex flex-wrap md:flex-row justify-between gap-2 md:gap-10 mt-8 mb-6">

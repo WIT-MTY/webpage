@@ -14,11 +14,11 @@ const NavDesktop = () => {
     }
 
     const handleContacto = () => {
-        router.push("/contacto"); 
+        router.push("/contacto");
     }
 
     return (
-        <div className="font-montserrat z-50 fixed w-full md:h-auto flex items-center py-3 px-6 md:px-10 bg-white border-b border-neutral-200">
+        <div className="invisible lg:visible font-montserrat z-50 fixed w-full md:h-auto flex items-center py-3 px-6 md:px-10 bg-white border-b border-neutral-200">
             {/* Left: Logo */}
             <div className="flex justify-start w-auto">
                 <div onClick={handleClick} className="cursor-pointer">
