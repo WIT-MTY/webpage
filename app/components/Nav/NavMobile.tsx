@@ -24,13 +24,13 @@ const NavMobile = () => {
     }
 
     return (
-        <div className="visible md:invisible font-montserrat">
+        <div className="visible lg:invisible font-montserrat">
             <div className="w-full z-50 bg-custom-dark-gray fixed p-4 text-white bg-indigo-950 text-2xl" onClick={() => setOpen(!open)}>
                 <FiMenu />
                 {open && (
                     <div className="flex flex-col items-center py-4 px-5 bg-custom-dark-gray w-full">
                         {routes.map((route, key) => (
-                            <NavElement key={key} label={route.label} href={route.href} mobile/>
+                            <NavElement key={key} label={route.label} href={route.href} mobile />
                         ))}
                     </div>
                 )}
