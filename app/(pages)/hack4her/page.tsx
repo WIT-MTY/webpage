@@ -22,7 +22,9 @@ const Hack4HerPage = () => {
                 <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
-                <FAQS />
+                <div className="mid:px-20 md:py-32">
+                    <FAQS />
+                </div>
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
                 <Sponsor />
             </div>
