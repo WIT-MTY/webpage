@@ -22,8 +22,8 @@ const slides = [
     },
     {
         "question": "¿Dónde será el evento?", "answer": (<>
-            <span className='pb-5'>El evento se llevará a cabo en la preparatoria del Tecnológico de Monterrey Eugenio Garza Lagüera:</span>
-            <iframe
+            <span className='pb-5'>El evento se llevará a cabo en las instalaciones del Tecnológico de Monterrey</span>
+            {/* <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.622613015572!2d-100.2760317458173!3d25.61745370847247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf6e6c1769f9%3A0xfa4d66770c9d82aa!2sPrepaTec%20Eugenio%20Garza%20Lag%C3%BCera!5e0!3m2!1ses-419!2smx!4v1739910269492!5m2!1ses-419!2smx"
                 width="300"
                 height="200"
@@ -31,7 +31,7 @@ const slides = [
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+            </iframe>*/}
         </>)
     },
     {

@@ -34,7 +34,6 @@ export default function PageSponsoring() {
                     <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
                         <Image src={iconn} alt="iconn logo" className="h-16 w-auto mx-auto" />
                         <Image src={Apex_systems} alt="Apex Systems logo" className="h-14 w-auto mx-auto" />
-                        <Image src={LEGO} alt="LEGO logo" className="h-20 w-auto mx-auto" />
                         <Image src={SteelCase} alt="Steelcase logo" className="h-28 w-auto mx-auto" />
                         <Image src={John_Deer} alt="John Deere logo" className="h-28 w-auto mx-auto" />
                         <Image src={CHUBB} alt="CHUBB logo" className="h-20 w-auto mx-auto" />

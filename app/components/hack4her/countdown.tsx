@@ -57,7 +57,7 @@ const Countdown = () => {
                 <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/2 pt-20 md:translate-y-1/3">
                     <div className="flex flex-col items-center font-montserrat">
                         <Image src={logo} alt="robot" className="pt-5" />
-                        <div className="bg-hack4her-bg px-4 py-2 flex flex-wrap md:flex-row justify-between gap-2 md:gap-10 mt-8 mb-6">
+                        <div className="bg-hack4her-bg px-6 py-4 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-10 mt-8 mb-6">
                             {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Days" />}
                             {(timeLeft.hours > 0 || timeLeft.days > 0) && (
                                 <CountdownElement time={timeLeft.hours} label="Hours" />
