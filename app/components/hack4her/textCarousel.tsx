@@ -39,7 +39,13 @@ const slides = [
             (<>1er lugar: iPad 10th Gen <br /> 2do lugar: Nintendo Switch <br /> 3er lugar: Audífonos Sony</>)
     },
     { "question": "¿Me tengo que quedar toda la noche?", "answer": "No, puedes irte si prefieres dormir en una cama." },
-    { "question": "¿Habrá hardware disponible?", "answer": "No contamos con una zona de hardware, pero su uso no está prohibido. Sin embargo, por términos de seguridad, favor de no traer kits de soldadura." }
+    { "question": "¿Habrá hardware disponible?", "answer": "No contamos con una zona de hardware, pero su uso no está prohibido. Sin embargo, por términos de seguridad, favor de no traer kits de soldadura." },
+    { "question": "Código de conducta MLH", "answer": (<>
+        <a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+        target="_blank"
+        rel="noopener noreferrer"
+        className='text-hack4her-bg hover:underline font-semibold'> Detalle </a>
+        </>)}
 ];
 
 export default function TextCarousel() {

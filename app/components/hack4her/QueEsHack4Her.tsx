@@ -24,16 +24,14 @@ const QueEsHack4Her = () => {
                     <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-5">
                         ¿Qué es Hack4Her?
                     </h1>
-                    <p className="text-black md:text-xl leading-loose mt-4">
-                    <ul className="list-disc pl-5 space-y-4">
-                        <li>Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.</li>
-                        <li>Talleres de actualización en tecnologías y negocios digitales.</li>
-                        <li>Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.</li>
-                        <li>Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.</li>  
-                    </ul>
-                        
-                    </p>
-
+                    <div>
+                        <ul className="text-black md:text-xl leading-loose mt-4 list-disc pl-5 space-y-4">
+                            <li>Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.</li>
+                            <li>Talleres de actualización en tecnologías y negocios digitales.</li>
+                            <li>Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.</li>
+                            <li>Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.</li>  
+                        </ul>          
+                    </div>
                     {/* Bouncing Arrow */}
                     <div
                         className="mt-8 flex flex-row items-center gap-2 cursor-pointer animate-bounce-horizontal transition-opacity duration-300"
