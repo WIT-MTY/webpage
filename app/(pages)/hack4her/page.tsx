@@ -11,11 +11,13 @@ const Hack4HerPage = () => {
         <>
             <div className="bg-hack4her-bg pb-20 pt-6">
                 <Counter />
+                <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
                 <div id="definition-section">
                     <Definition />
                 </div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
-                <div id="schedule-section mt-80">
+                <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
+                <div id="schedule-section mt-80 mid:px-20 md:py-32">
                     <Scheme />
                 </div>
                 <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
@@ -23,6 +25,7 @@ const Hack4HerPage = () => {
                 <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
                 <div className="mid:px-20 md:py-32">
+                    <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
                     <FAQS />
                 </div>
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
