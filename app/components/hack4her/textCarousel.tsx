@@ -6,7 +6,7 @@ import SectionHack4Her from '@/app/components/hack4her/sectionHack4Her';
 
 const slides = [
     { "question": "¿Es gratis asistir al evento?", "answer": "¡Sí! Además, se proveerán alimentos en el evento." },
-    { "question": "¿Quién puede ir? ¿Y si no tengo experiencia?", "answer": "Este evento está abierto a todos los estudiantes y es amigable para principiantes." },
+    { "question": "¿Quién puede ir? ¿Y si no tengo experiencia?", "answer": "¡Este evento es hecho por y para mujeres en ambitos interdisciplinarios; ademas de ser una experiencia amigable para principiantes!" },
     { "question": "¿Hay un máximo de integrantes por equipo?", "answer": "¡Sí! Deben ser equipos de máximo 4 personas." },
     { "question": "¿Hay reembolsos de viaje?", "answer": "No contamos con ese servicio por el momento." },
     { "question": "¿Qué debería llevar?", "answer": "Tu laptop, cargador, audífonos, desodorante y una almohada/cobija." },
@@ -99,7 +99,10 @@ export default function TextCarousel() {
                             <GoDotFill
                                 key={index}
                                 size={20}
-                                className={`${cIndex === index ? 'text-blue-500' : 'text-gray-400'}`}
+                                className={`${
+                                    cIndex === index ? 'text-blue-500' : 'text-gray-400'
+
+                                }`}
                                 onClick={() => setCIndex(index)}
                             />
                         ))}

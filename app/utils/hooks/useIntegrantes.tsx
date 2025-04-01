@@ -33,13 +33,13 @@ export const useIntegrantes = () => {
                     row: 2,
                     position: "center"
                 },
-                {
-                    nombre: "Fátima Moncada",
-                    puesto: "Directora de proyectos",
-                    image: "/images/integrantes/24-25/fatima.png",
-                    row: 2,
-                    position: "center"
-                },
+                //{
+                    //nombre: "Fátima Moncada",
+                    //puesto: "Directora de proyectos",
+                    //image: "/images/integrantes/24-25/fatima.png",
+                    //row: 2,
+                  //  position: "center"
+                //},
                 {
                     nombre: "Eunice Peña",
                     puesto: "Directora de Finanzas",
