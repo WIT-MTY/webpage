@@ -11,7 +11,7 @@ const ContactPage = () => {
             <div className="flex-grow">
                 <Section>
                     <div className="mt-4 mb-8 pt-8">
-                        <InfoHeader title="¡Te escuchamos!" description="Nos encantaría saber de ti. Contáctanos por email o envíanos un DM en Instagram y te responderemos con gusto."/>
+                        <InfoHeader title="¡Te escuchamos!" description="Nos encantaría saber de ti. Contáctanos por correo electrónico o envíanos un mensaje directo por Instagram y te responderemos a la brevedad."/>
                     </div>
                 </Section>
                 <Section>

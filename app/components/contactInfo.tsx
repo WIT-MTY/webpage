@@ -31,7 +31,7 @@ const ContactInfo = () => {
                     <a href="https://www.linkedin.com/company/wit-mty/" target="_blank" rel="noopener noreferrer">
                         <img src="/images/altSocials/linkd.png" alt="LinkedIn" className="w-16 h-16 hover:opacity-80 transition" />
                     </a>
-                    <p className="mt-2 text-gray-700 text-sm">/company/wit-mty</p>
+                    <p className="mt-2 text-gray-700 text-sm">Women in Technology</p>
                 </div>
             </div>
         </div>
