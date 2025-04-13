@@ -2,7 +2,7 @@
 
 import SectionHack4Her from "./sectionHack4Her";
 import Image from "next/image";
-import logo from "../../../public/images/hack4her/hack4her_logo.png";
+import logo from "../../../public/images/hack4her/H4H-logo.svg";
 import robot from "../../../public/images/hack4her/robot1.png";
 import { useEffect, useState } from "react";
 import CountdownElement from "./countdownElement";
@@ -54,10 +54,10 @@ const Countdown = () => {
     return (
         <SectionHack4Her>
             <div className="w-full h-full md:relative px-10 md:px-0">
-                <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/2 pt-20 md:translate-y-1/3">
+                <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/2 md:translate-y-1/3">
                     <div className="flex flex-col items-center font-montserrat">
-                        <Image src={logo} alt="robot" className="pt-5" />
-                        <div className="bg-hack4her-bg px-6 py-2 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-10 mt-8 mb-6">
+                        <Image src={logo} alt="Logo" className="w-full" />
+                        <div className="bg-hack4her-bg px-4 md:px-8 py-3 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-7 mt-3 mb-6">
                             {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Días" />}
                             {(timeLeft.hours > 0 || timeLeft.days > 0) && (
                                 <CountdownElement time={timeLeft.hours} label="Horas" />
@@ -72,7 +72,7 @@ const Countdown = () => {
                                     <CountdownElement time={timeLeft.seconds} label="Segundos" />
                                 )}
                         </div>
-                        <div className="text-hack4her-font text-2xl md:text-3xl">
+                        <div className="text-hack4her-font text-xl md:text-3xl">
                             MAYO 31 - JUNIO 1
                         </div>
                         <div className="pt-4 inline-flex items-center text-lg md:text-2xl  gap-x-1">
@@ -83,7 +83,7 @@ const Countdown = () => {
 
                     </div>
                 </div>
-                <Image src={robot} alt="robot" className="absolute left-10 bottom-0 w-1/3" />
+                <Image src={robot} alt="robot" className="hidden md:block md:absolute md:left-10 md:bottom-0 md:w-1/3" />
                 {/* Bouncing Arrow - Only Visible if showArrow is true */}
                 {showArrow && (
                     <div

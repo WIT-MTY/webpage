@@ -20,7 +20,7 @@ const QueEsHack4Her = () => {
     return (
         <SectionHack4Her>
             <div className="md:h-screen w-full relative md:px-10 flex items-center">
-                <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg z-10">
+                <div className="bg-white rounded-lg p-8 flex-col items-center m-10 md:w-1/2 shadow-lg z-10">
                     <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-7">
                         ¿Qué es Hack4Her?
                     </h1>
@@ -51,7 +51,7 @@ const QueEsHack4Her = () => {
                     </div>
                 </div>
                 <div className="absolute top-28 right-20 w-2/5 h-auto z-0">
-                    <Image src={robot2} alt="Robot 2" className="w-5/6 " />
+                    <Image src={robot2} alt="Robot 2" className="hidden md:block md:w-5/6 " />
                 </div>
             </div>
 
