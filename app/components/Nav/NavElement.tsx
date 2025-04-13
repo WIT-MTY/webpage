@@ -12,7 +12,7 @@ const NavElement = ({ label, href, mobile }: { label: string; href: string; mobi
     return (
         <div
             className={clsx(
-                "relative cursor-pointer font-light font-montserrat tracking-wider inline-block group",
+                "relative cursor-pointer font-light font-montserrat tracking-wider inline-block text-center group",
                 mobile
                     ? "text-neutral-300 py-1 text-sm"
                     : "text-neutral-500 hover:text-gray-800 text-xs lg:text-sm",
