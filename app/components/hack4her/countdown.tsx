@@ -21,7 +21,7 @@ const calculateTimeLeft = (targetDate: Date) => {
 
 
 const Countdown = () => {
-    const targetDate = new Date("2025-05-30T15:00:00Z");
+    const targetDate = new Date("2025-05-31T09:00:00Z");
     // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
     const [showArrow, setShowArrow] = useState(true);
 
@@ -58,25 +58,25 @@ const Countdown = () => {
                     <div className="flex flex-col items-center font-montserrat">
                         <Image src={logo} alt="robot" className="pt-5" />
                         <div className="bg-hack4her-bg px-6 py-2 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-10 mt-8 mb-6">
-                            {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Days" />}
+                            {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Días" />}
                             {(timeLeft.hours > 0 || timeLeft.days > 0) && (
-                                <CountdownElement time={timeLeft.hours} label="Hours" />
+                                <CountdownElement time={timeLeft.hours} label="Horas" />
                             )}
                             {(timeLeft.hours > 0 || timeLeft.days > 0 || timeLeft.minutes > 0) && (
-                                <CountdownElement time={timeLeft.minutes} label="Minutes" />
+                                <CountdownElement time={timeLeft.minutes} label="Minutos" />
                             )}
                             {(timeLeft.hours > 0 ||
                                 timeLeft.days > 0 ||
                                 timeLeft.minutes > 0 ||
                                 timeLeft.seconds > 0) && (
-                                    <CountdownElement time={timeLeft.seconds} label="Seconds" />
+                                    <CountdownElement time={timeLeft.seconds} label="Segundos" />
                                 )}
                         </div>
                         <div className="text-hack4her-font text-2xl md:text-3xl">
-                            MAYO 30 - JUNIO 1
+                            MAYO 31 - JUNIO 1
                         </div>
                         <div className="pt-4 inline-flex items-center text-lg md:text-2xl  gap-x-1">
-                            By <img src="/images/logo-white.png" alt="logo WIT" className="w-20 invert" />
+                             <img src="/images/logo-white.png" alt="logo WIT" className="w-20 invert" />
                         </div>
 
 

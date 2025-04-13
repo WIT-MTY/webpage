@@ -28,7 +28,7 @@ const Schedule = () => {
                             </div>
                             <p className="text-center text-sm md:text-base">1:30 PM - 2:30 PM</p>
                             <div className="text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Cierre Dia 1
+                                Cierre
                             </div>
                             <p className="text-center text-sm md:text-base">2:30 PM - 3:00 PM</p>
                         </div>

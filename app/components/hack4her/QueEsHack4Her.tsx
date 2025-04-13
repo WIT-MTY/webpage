@@ -21,7 +21,7 @@ const QueEsHack4Her = () => {
         <SectionHack4Her>
             <div className="md:h-screen w-full relative md:px-10 flex items-center">
                 <div className="bg-white rounded-lg p-8 m-10 md:w-1/2 shadow-lg z-10">
-                    <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-5">
+                    <h1 className="text-hack4her-bg font-montserrat font-extrabold text-5xl mb-7">
                         ¿Qué es Hack4Her?
                     </h1>
                     <div>
@@ -29,7 +29,7 @@ const QueEsHack4Her = () => {
                             <li>Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.</li>
                             <li>Talleres de actualización en tecnologías y negocios digitales.</li>
                             <li>Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.</li>
-                            <li>Hackathon con una empresa lider que desafiará a las participantes con distintas problemáticas tecnológicas.</li>  
+                            <li>Hackathon con una empresa líder que desafiará a las participantes con distintas problemáticas tecnológicas.</li>  
                         </ul>          
                     </div>
                     {/* Bouncing Arrow */}
