@@ -12,18 +12,18 @@ interface TwoColumnsProps {
 
 const TwoColumns: React.FC<TwoColumnsProps> = ({ columns }) => {
   return (
-    <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 w-full h-full p-4">
+    <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 w-full h-full pb-16">
       {columns.map((column, index) => (
         <div
           key={index}
           className="flex-1 flex flex-col items-center justify-center"
         >
           <div
-            className="w-full max-w-[90%] md:max-w-[390px] rounded-lg shadow-lg bg-white flex flex-col p-6 h-full"
+            className="w-full md:max-w-[390px] rounded-lg shadow-lg bg-white flex flex-col p-6 h-full"
           >
             {/* Heading */}
             <h3
-              className="flex items-center font-montserrat justify-center mt-4 mb-2 text-[#4703a6] font-bold text-xl md:text-2xl leading-tight"
+              className="flex items-center font-montserrat justify-center text-[#4703a6] font-bold text-xl md:text-2xl leading-tight"
             >
               {column.heading}
             </h3>

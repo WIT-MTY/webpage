@@ -15,7 +15,7 @@ const Page = () => {
             titulo={"SERVICIO SOCIAL"}
             subtitulo={"OBJETIVO"}
             texto={
-              "WitCode tiene como objetivo atacar la brecha de género en la tecnología por medio de una educación que brinde herramientas para nivelar las oportunidades de manera igualitaria en este ámbito. Lo anterior, mediante talleres a estudiantes de 1°a 3° de secundaria de la escuela Ciudad de los Niños."
+              "WitCode tiene como objetivo atender la brecha de género en la tecnología por medio de una educación que brinde herramientas para nivelar las oportunidades de manera igualitaria en este ámbito. Lo anterior, mediante talleres a alumnas de 1°a 3° de secundaria de la escuela Ciudad de los Niños."
             }
           />
         </div>
@@ -35,11 +35,11 @@ const Page = () => {
                       "Modalidad en línea y con sesiones presenciales de inicio y clausura."],
             },
             {
-              heading: "Graduadas",
-              items: ["29 principiantes", 
-                      "3 Avanzadas", 
-                      "8 auxiliares de tutor (piloto)"],
-              optionalText: "Celebrando un total de 40 alumnas en el periodo agosto a diciembre del 2023."
+              heading: "Impacto",
+              items: ["94 participantes.", 
+                      "76 estudiantes de universidad realizando su servicio social.", 
+                      "90% de permanencia en los talleres."],
+              optionalText: "En cifras totales del 2024."
             },
             
           ]}
