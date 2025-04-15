@@ -6,6 +6,7 @@ import logo from "../../../public/images/hack4her/H4H-logo.svg";
 import robot from "../../../public/images/hack4her/robot1.png";
 import { useEffect, useState } from "react";
 import CountdownElement from "./countdownElement";
+import Button from "@/app/components/hack4her/registerButton";
 
 const calculateTimeLeft = (targetDate: Date) => {
     const difference = +targetDate - +new Date();
@@ -53,46 +54,48 @@ const Countdown = () => {
 
     return (
         <SectionHack4Her>
-            <div className="w-full h-full md:relative px-10 md:px-0">
-                <div className="md:absolute bg-white rounded-lg p-8 md:translate-x-1/2 md:w-1/2 translate-y-1/2 md:translate-y-1/3">
-                    <div className="flex flex-col items-center font-montserrat">
-                        <Image src={logo} alt="Logo" className="w-full" />
-                        <div className="bg-hack4her-bg px-4 md:px-8 py-3 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-7 mt-3 mb-6">
-                            {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Días" />}
-                            {(timeLeft.hours > 0 || timeLeft.days > 0) && (
-                                <CountdownElement time={timeLeft.hours} label="Horas" />
+            <div className="w-full flex flex-col items-center relative">
+                <div className="w-full flex flex-col items-center md:w-1/2 bg-white shadow-lg rounded-lg p-8 mt-32 z-10">
+                    <Image src={logo} alt="Logo" className="w-full" />
+                    <div className="bg-hack4her-bg px-4 md:px-8 py-3 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-7 mt-3 mb-6">
+                        {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Días" />}
+                        {(timeLeft.hours > 0 || timeLeft.days > 0) && (
+                            <CountdownElement time={timeLeft.hours} label="Horas" />
+                        )}
+                        {(timeLeft.hours > 0 || timeLeft.days > 0 || timeLeft.minutes > 0) && (
+                            <CountdownElement time={timeLeft.minutes} label="Minutos" />
+                        )}
+                        {(timeLeft.hours > 0 ||
+                            timeLeft.days > 0 ||
+                            timeLeft.minutes > 0 ||
+                            timeLeft.seconds > 0) && (
+                                <CountdownElement time={timeLeft.seconds} label="Segundos" />
                             )}
-                            {(timeLeft.hours > 0 || timeLeft.days > 0 || timeLeft.minutes > 0) && (
-                                <CountdownElement time={timeLeft.minutes} label="Minutos" />
-                            )}
-                            {(timeLeft.hours > 0 ||
-                                timeLeft.days > 0 ||
-                                timeLeft.minutes > 0 ||
-                                timeLeft.seconds > 0) && (
-                                    <CountdownElement time={timeLeft.seconds} label="Segundos" />
-                                )}
-                        </div>
-                        <div className="text-hack4her-font text-xl md:text-3xl">
-                            MAYO 31 - JUNIO 1
-                        </div>
-                        <div className="pt-4 inline-flex items-center text-lg md:text-2xl  gap-x-1">
-                             <img src="/images/logo-white.png" alt="logo WIT" className="w-20 invert" />
-                        </div>
-
-
-
+                    </div>
+                    <div className="text-hack4her-font text-xl md:text-3xl mb-6">
+                        MAYO 31 - JUNIO 1
                     </div>
                 </div>
-                <Image src={robot} alt="robot" className="hidden md:block md:absolute md:left-10 md:bottom-0 md:w-1/3" />
+
+                {/* CTA Button*/}
+                <div className="pt-6 mb-3">
+                    <Button label="🚀 ¡Regístrate!"/>
+                </div>
+
+            </div>
+
+                {/* Robot Image */}
+                <Image src={robot} alt="robot" className="hidden md:block md:absolute md:right-10 md:bottom-0 md:w-1/3 md:z-20" />
+
                 {/* Bouncing Arrow - Only Visible if showArrow is true */}
                 {showArrow && (
                     <div
-                        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce transition-opacity duration-300"
+                        className="flex flex-col bottom-12 items-center transform cursor-pointer animate-bounce transition-opacity duration-300"
                         onClick={scrollToNextSection}
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-10 h-10 text-hack4her-font"
+                            className="w-10 h-10 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -102,7 +105,6 @@ const Countdown = () => {
                         </svg>
                     </div>
                 )}
-            </div>
         </SectionHack4Her>
     )
 }

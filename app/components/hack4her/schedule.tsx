@@ -41,39 +41,27 @@ const Schedule = () => {
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
                                 Registro
                             </div>
-                            <p className="text-center text-sm md:text-base">8:00 AM - 10:00 AM</p>
+                            <p className="text-center text-sm md:text-base">8:00 AM - 9:50 AM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Inaguración
+                                Inauguración
                             </div>
                             <p className="text-center text-sm md:text-base">10:00 AM - 11:00 AM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold"style={{ backgroundColor: "#f0044c" }}>
                                 Inicia el reloj
                             </div>
-                            <p className="text-center text-sm md:text-base">11:30 AM</p>
+                            <p className="text-center text-sm md:text-base">12:00 PM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Taller 1
+                                Comida
                             </div>
-                            <p className="text-center text-sm md:text-base">12:30 PM - 1:10 PM</p>
-                            <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Charla 1
-                            </div>
-                            <p className="text-center text-sm md:text-base">12:30 PM - 1:15 PM</p>
-                            <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Taller 2
-                            </div>
-                            <p className="text-center text-sm md:text-base">3:00 PM - 3:40 PM</p>
-                            <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
-                                Charla 2
-                            </div>
-                            <p className="text-center text-sm md:text-base">5:15 PM - 6:00 PM</p>
+                            <p className="text-center text-sm md:text-base">1:00 PM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
                                 Cena
                             </div>
-                            <p className="text-center text-sm md:text-base">8:00 PM</p>
+                            <p className="text-center text-sm md:text-base">8:30 PM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold" style={{ backgroundColor: "#f0044c" }}>
                                 Dinámicas
                             </div>
-                            <p className="text-center text-sm md:text-base">Medianoche</p>
+                            <p className="text-center text-sm md:text-base">10:45 PM - 11:45 PM</p>
                         </div>
                     </div>
 
@@ -96,7 +84,7 @@ const Schedule = () => {
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold"style={{ backgroundColor: "#f0044c" }}>
                                 Premiación
                             </div>
-                            <p className="text-center text-sm md:text-base">1:40 PM</p>
+                            <p className="text-center text-sm md:text-base">1:30 PM</p>
                             <div className="bg-purple-700 text-white px-6 py-2 rounded-full text-center font-semibold"style={{ backgroundColor: "#f0044c" }}>
                                 Cierre
                             </div>
