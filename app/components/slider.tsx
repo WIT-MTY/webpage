@@ -20,8 +20,8 @@ const slides = [
   {
     subheading: 'ANUAL',
     image: '/images/proyectos/Desayuno8_1.JPG',
-    title: 'Comida día de la mujer',
-    description: 'El grupo organiza una comida del día de la mujer con estudiantes, profesoras, entre otros.',
+    title: 'Desayuno del día de la mujer',
+    description: 'Desayuno conmemorativo donde alumnas, docentes y profesionales dialogan sobre experiencias y liderazgo femenino. Un espacio para inspirar y visibilizar su impacto.',
   },
   {
     subheading: 'PRÓXIMAMENTE',
