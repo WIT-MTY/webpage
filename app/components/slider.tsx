@@ -19,7 +19,7 @@ const slides = [
   },
   {
     subheading: 'ANUAL',
-    image: '/images/proyectos/Desayuno8_1.JPG',
+    image: '/images/proyectos/desayuno.JPG',
     title: 'Desayuno del día de la mujer',
     description: 'Desayuno conmemorativo donde alumnas, docentes y profesionales dialogan sobre experiencias y liderazgo femenino. Un espacio para inspirar y visibilizar su impacto.',
   },

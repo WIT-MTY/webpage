@@ -12,13 +12,8 @@ export default function Home() {
           <div className="my-10 relative">
             <img
               className="object-center object-cover w-full block"
-              src="/images/wit.png"
+              src="/images/nuevoWit.png"
               alt="wit"
-            />
-            <img
-              className="object-center object-cover w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              src="/images/logo-white.png"
-              alt="logo-white"
             />
           </div>
 
