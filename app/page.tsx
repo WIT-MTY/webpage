@@ -12,7 +12,7 @@ export default function Home() {
           <div className="my-10 relative">
             <img
               className="object-center object-cover w-full block"
-              src="/images/nuevoWit.png"
+              src="/images/nuevoWIT.png"
               alt="wit"
             />
           </div>
