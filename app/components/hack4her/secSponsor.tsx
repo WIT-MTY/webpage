@@ -15,7 +15,7 @@ const Sponsor = () => {
                 <div className="bg-white rounded-lg p-10 mt-[-60px] md:w-1/2 shadow-lg  flex">
                     <div className="flex flex-col items-center justify-center w-full text-center">
                         <img
-                            src="images/hack4her/hack4her_logo.png"
+                            src="images/hack4her/H4H-logo.svg"
                             alt="Logo Hack4Her"
                             className="w-3/4 max-w-sm"
                         />

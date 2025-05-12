@@ -28,7 +28,7 @@ const Hack4HerPage = () => {
                     <FAQS />
                 </div>
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
-                {/* <Sponsor /> */}
+                <Sponsor />
             </div>
             {/* Badge de MLH */}
             <a 
