@@ -22,7 +22,7 @@ const calculateTimeLeft = (targetDate: Date) => {
 
 
 const Countdown = () => {
-    const targetDate = new Date("2025-05-31T09:00:00Z");
+    const targetDate = new Date("2025-06-14T09:00:00Z");
     // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
     const [showArrow, setShowArrow] = useState(true);
 
@@ -73,7 +73,7 @@ const Countdown = () => {
                             )}
                     </div>
                     <div className="text-hack4her-font text-xl md:text-3xl mb-6">
-                        MAYO 31 - JUNIO 1
+                        JUNIO 14 - 15
                     </div>
                 </div>
 
