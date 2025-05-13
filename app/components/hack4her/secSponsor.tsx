@@ -21,7 +21,7 @@ const Sponsor = () => {
                         />
 
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-xl md:text-5xl mb-8">
-                            es patrocinado por:
+                            en colaboración con:
                         </h1>
                         <img
                             src="images/LOGO_ARCA.png"
@@ -29,7 +29,7 @@ const Sponsor = () => {
                             className="w-3/4 max-w-sm mt-3"
                         />
                         <p className="text-black md:text-xl mt-4">
-                            Gracias, por ser nuestro patrocinador principal en Hack4Her. Su apoyo impulsa el talento femenino en tecnología y nos ayuda a seguir cerrando la brecha de género en STEM. Juntos, estamos creando oportunidades y construyendo un futuro más inclusivo. ¡Gracias por ser parte de esta misión!
+                            Gracias, por ser nuestro colaborador principal en Hack4Her. Su apoyo impulsa el talento femenino en tecnología y nos ayuda a seguir cerrando la brecha de género en STEM. Juntos, estamos creando oportunidades y construyendo un futuro más inclusivo. ¡Gracias por ser parte de esta misión!
                         </p>
                     </div>
                 </div>
