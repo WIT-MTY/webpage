@@ -17,19 +17,19 @@ const Sponsor = () => {
                         <img
                             src="images/hack4her/H4H-logo.svg"
                             alt="Logo Hack4Her"
-                            className="w-3/4 max-w-sm"
+                            className="w-3/4 max-w-md"
                         />
 
                         <h1 className="text-hack4her-bg font-montserrat font-extrabold text-xl md:text-5xl mb-8">
                             en colaboración con:
                         </h1>
                         <img
-                            src="images/LOGO_ARCA.png"
+                            src="images/AC Digital Nest logo color_sin fondo.png"
                             alt="Logo Arca Continental"
-                            className="w-3/4 max-w-sm mt-3"
+                            className="w-full max-w-xl mt-3"
                         />
-                        <p className="text-black md:text-xl mt-4">
-                            Gracias, por ser nuestro colaborador principal en Hack4Her. Su apoyo impulsa el talento femenino en tecnología y nos ayuda a seguir cerrando la brecha de género en STEM. Juntos, estamos creando oportunidades y construyendo un futuro más inclusivo. ¡Gracias por ser parte de esta misión!
+                        <p className="text-hack4her-bg font-montserrat font-bold md:text-xl mt-8">
+                            ¡Gracias a nuestro colaborador en esta misión! Impulsando el talento femenino, creando oportunidades y construyendo un futuro más inclusivo.
                         </p>
                     </div>
                 </div>
