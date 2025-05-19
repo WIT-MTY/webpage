@@ -26,10 +26,10 @@ const QueEsHack4Her = () => {
                     </h1>
                     <div>
                         <ul className="text-black md:text-xl leading-loose mt-4 list-disc pl-5 space-y-4">
-                            <li>Es un evento nacional que conjunta 3 días de crecimiento profesional enfocado a mujeres en ámbitos interdisciplinarios con retos de ingeniería y negocios.</li>
+                            <li>Es un evento nacional que conjunta 3 días de crecimiento profesional en ingeniería y negocios, con enfoque en el talento femenino, con apertura a todas las personas interesadas.</li>
                             <li>Talleres de actualización en tecnologías y negocios digitales.</li>
                             <li>Reunión Nacional de líderes WIT en donde se fortalecerán los lazos de WIT, de las empresas y de las líderes WIT universitarias, lideradas por WIT ITESM Escuela de Ingeniería.</li>
-                            <li>Hackathon con una empresa líder que desafiará a las participantes con distintas problemáticas tecnológicas.</li>  
+                            <li>Hackathon en colaboración con el área de Tecnología de Arca Continental - Digital Nest, que desafiará a los participantes con distintos retos tecnológicos y de negocio. </li>  
                         </ul>          
                     </div>
                     {/* Bouncing Arrow */}
