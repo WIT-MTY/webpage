@@ -17,7 +17,7 @@ const ExpLetrero = () => {
     return (
         <>        
             <div className=" sm:w-full flex flex-col md:w-1/2 items-center mt-24">
-                <div className="w-full md:w-4/6 p-12 md:mt-48 bg-white m-8 rounded-xl ml-12">
+                <div className="w-full md:w-4/6 p-12 md:mt-32 bg-white m-8 rounded-xl ml-12">
                     <p className="text-xl md:text-xl text-justify">
                         El hackathon es una experiencia de innovación en la que estudiantes de últimos 
                         semestres resuelven retos reales de negocio propuestos por un área de tecnología 
