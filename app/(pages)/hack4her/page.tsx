@@ -5,6 +5,7 @@ import Definition from "@/app/components/hack4her/QueEsHack4Her"
 import Scheme from "@/app/components/hack4her/schedule"
 import FAQS from '@/app/components/hack4her/textCarousel'
 import Footer from "@/app/components/general/Footer";
+import ChallengesSection from "@/app/components/hack4her/challenges";
 
 const Hack4HerPage = () => {
     return (
@@ -25,6 +26,12 @@ const Hack4HerPage = () => {
                 <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
                 <div className="mid:px-20 md:py-32">
                     <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
+
+                {/* Sección de Desafíos */}
+                <div className="mid:px-20 md:py-32">
+                    <ChallengesSection />
+                </div>
+
                     <FAQS />
                 </div>
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
