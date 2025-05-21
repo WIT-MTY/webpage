@@ -58,7 +58,7 @@ const Countdown = () => {
             <div className="w-full flex flex-col items-center relative">
                 <div className="w-full flex flex-col md:flex-row items-center relative">
                     <ExpLetrero/>                                    {/*w-1/2*/}
-                    <div className="w-full flex flex-col items-center md:w-5/12 bg-white shadow-lg rounded-lg p-8 mt-32 z-10">
+                    <div className="w-full flex flex-col items-center md:w-5/12 bg-white shadow-lg rounded-lg p-8 mt-16 z-10">
                         <Image src={logo} alt="Logo" className="w-full" />
                         <div className="bg-hack4her-bg px-4 md:px-8 py-3 flex flex-wrap rounded-full md:flex-row justify-between gap-2 md:gap-7 mt-3 mb-6">
                             {timeLeft.days > 0 && <CountdownElement time={timeLeft.days} label="Días" />}
