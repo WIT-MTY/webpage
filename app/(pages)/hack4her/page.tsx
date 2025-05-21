@@ -5,12 +5,19 @@ import Definition from "@/app/components/hack4her/QueEsHack4Her"
 import Scheme from "@/app/components/hack4her/schedule"
 import FAQS from '@/app/components/hack4her/textCarousel'
 import Footer from "@/app/components/general/Footer";
+import ConoceArca from "@/app/components/hack4her/colaborador";
 
 const Hack4HerPage = () => {
     return (
         <>
             <div className="bg-hack4her-bg pb-20 pt-6">
                 <Counter />
+                <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
+                <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
+                <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
+                <div id="know-arca">
+                    <ConoceArca />
+                </div>
                 <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
                 <div id="definition-section">
                     <Definition />
