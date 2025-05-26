@@ -12,7 +12,7 @@ const Sponsor: React.FC = () => {
         </div>
 
         {/* Caja blanca de ancho completo sin límites */}
-        <div className="bg-white p-10 shadow-lg w-full mx-0 mt-[-60px]">
+        <div className="bg-white p-10 shadow-lg w-1/2 rounded-lg mx-0 mt-[-60px]">
           <div className="flex flex-col items-center justify-center w-full text-center">
             <img
               src="/images/hack4her/H4H-logo.svg"

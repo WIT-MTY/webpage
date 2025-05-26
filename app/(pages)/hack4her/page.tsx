@@ -18,22 +18,14 @@ const Hack4HerPage = () => {
                 </div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
-                <div id="schedule-section mt-80 mid:px-20 md:py-32">
+                <div id="schedule-section" className="scroll-mt-32 mid:px-20 md:py-32">
                     <Scheme />
                 </div>
-                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
-                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
-                <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
-                <div className="mid:px-20 md:py-32">
-                    <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
-
-                {/* Sección de Desafíos */}
-                <div className="mid:px-20 md:py-32">
+                <div id="challenges-section" className="mid:px-20 md:py-32">
                     <ChallengesSection />
                 </div>
 
                     <FAQS />
-                </div>
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
                 <Sponsor />
             </div>
