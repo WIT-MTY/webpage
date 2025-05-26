@@ -5,6 +5,7 @@ import Definition from "@/app/components/hack4her/QueEsHack4Her"
 import Scheme from "@/app/components/hack4her/schedule"
 import FAQS from '@/app/components/hack4her/textCarousel'
 import Footer from "@/app/components/general/Footer";
+import ChallengesSection from "@/app/components/hack4her/challenges";
 import ConoceArca from "@/app/components/hack4her/colaborador";
 
 const Hack4HerPage = () => {
@@ -24,16 +25,14 @@ const Hack4HerPage = () => {
                 </div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
-                <div id="schedule-section mt-80 mid:px-20 md:py-32">
+                <div id="schedule-section" className="scroll-mt-32 mid:px-20 md:py-32">
                     <Scheme />
                 </div>
-                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
-                <div className="visible md:h-0 h-80 bg-hack4her-bg"></div>
-                <div className="visible md:h-0 h-20 bg-hack4her-bg"></div>
-                <div className="mid:px-20 md:py-32">
-                    <div className="visible md:h-0 h-24 bg-hack4her-bg"></div>
-                    <FAQS />
+                <div id="challenges-section" className="mid:px-20 md:py-32">
+                    <ChallengesSection />
                 </div>
+
+                    <FAQS />
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
                 <Sponsor />
             </div>

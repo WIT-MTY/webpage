@@ -12,7 +12,7 @@ const QueEsHack4Her = () => {
     const scrollToNextSection = () => {
         const nextSection = document.getElementById("schedule-section");
         if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
+            nextSection.scrollIntoView({ behavior: "smooth", block: 'center' });
         }
     };
 
