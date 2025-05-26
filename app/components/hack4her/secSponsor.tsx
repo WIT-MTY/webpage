@@ -5,14 +5,14 @@ import SectionHack4Her from './sectionHack4Her';
 const Sponsor: React.FC = () => {
   return (
     <SectionHack4Her>
-      <div className="relative w-full flex flex-col items-center justify-center pt-20 pb-0 px-0 z-20">
+      <div className="h-screen w-full flex flex-col items-center justify-center px-10 z-20">
         {/* Robot encima de la caja */}
         <div className="relative w-full flex justify-center">
           <Image src={robot1} alt="Robot 1" className="w-1/3 max-w-sm" />
         </div>
 
         {/* Caja blanca de ancho completo sin límites */}
-        <div className="bg-white p-10 shadow-lg w-1/2 rounded-lg mx-0 mt-[-60px]">
+        <div className="bg-white p-10 shadow-lg w-1/2 rounded-lg mx-0 mt-[-60px]"> 
           <div className="flex flex-col items-center justify-center w-full text-center">
             <img
               src="/images/hack4her/H4H-logo.svg"

@@ -8,7 +8,7 @@ import bg5 from "../../../public/images/hack4her/bg5.png";
 import bg6 from "../../../public/images/hack4her/bg6.png";
 
 const SectionHack4Her = ({ children }: { children: React.ReactNode }) => (
-  <div className="relative w-full h-auto md:h-screen bg-hack4her-bg overflow-hidden">
+  <div className="relative w-full h-auto md:h-screen bg-hack4her-bg">
     {/* content */}
     <div className="relative z-20">
       {children}
