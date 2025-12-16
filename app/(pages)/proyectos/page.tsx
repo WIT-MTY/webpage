@@ -1,7 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Slider, { Settings } from "react-slick";
+import Section from '@/app/components/general/Section';
+import ProjectCard from "@/app/components/proyectos_com/ProjectCard";
+import Footer from "@/app/components/general/Footer";
+import Header2sub from '@/app/components/header2sub';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -11,7 +14,6 @@ interface Project {
   images: string[];
 }
 
-// Datos de prueba con varias imágenes por evento
 const projects: Project[] = [
   {
     title: "Conferencias motivacionales",
@@ -20,7 +22,7 @@ const projects: Project[] = [
     images: [
       "/images/proyectos/proy6.jpg",
       "/images/proyectos/proy6.jpg",
-      "/images/proyectos/proy6.jpg",
+      "/images/proyectos/proy6.jpg"
     ],
   },
   {
@@ -30,7 +32,7 @@ const projects: Project[] = [
     images: [
       "/images/proyectos/JTI24_5.JPG",
       "/images/proyectos/JTI24_5.JPG",
-      "/images/proyectos/JTI24_5.JPG",
+      "/images/proyectos/JTI24_5.JPG"
     ],
   },
   {
@@ -40,6 +42,7 @@ const projects: Project[] = [
     images: [
       "/images/proyectos/desayuno.JPG",
       "/images/proyectos/desayuno.JPG",
+      "/images/proyectos/desayuno.JPG"
     ],
   },
   {
@@ -48,7 +51,9 @@ const projects: Project[] = [
       "Hack4Her es un hackathon organizado por mujeres y dirigido a mujeres. El objetivo es fomentar la participación de mujeres en hackathons y en el área de la tecnología.",
     images: [
       "/images/proyectos/hack4her_flyer.png",
-      "/images/proyectos/hack4her_flyer.png"],
+      "/images/proyectos/hack4her_flyer.png",
+      "/images/proyectos/hack4her_flyer.png"
+    ],
   },
   {
     title: "EmpowerHack",
@@ -56,59 +61,38 @@ const projects: Project[] = [
       "Un hackathon dirigido a chicas de secundaria con el propósito de fomentar la participación de mujeres en la tecnología desde una temprana edad.",
     images: [
       "/images/proyectos/empower_hack.jpeg",
-      "/images/proyectos/empower_hack.jpeg"],
+      "/images/proyectos/empower_hack.jpeg",
+      "/images/proyectos/empower_hack.jpeg"
+    ],
   },
 ];
 
 
-const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
-  const settings: Settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,       
-    slidesToScroll: 2,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-  };
-
-  return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-gray-100 rounded-2xl shadow-md mb-8">
-      {/* Slider a la izquierda */}
-      <div className="w-full md:w-1/2">
-        <Slider {...settings}>
-          {project.images.map((img, i) => (
-            <div key={i}>
-              <img
-                src={img}
-                alt={`${project.title} ${i + 1}`}
-                className="rounded-xl w-full h-80 object-cover"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
-
-      {/* Texto a la derecha */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          {project.title}
-        </h2>
-        <p className="text-gray-600 text-lg">{project.description}</p>
-      </div>
-    </div>
-  );
-};
-
 // Componente principal que renderiza todas las tarjetas
 const ProjectShowcase: React.FC = () => {
   return (
-    <div className="container mx-auto py-8">
+    <main>
+      <div className="overflow-scroll p-10 md:pt-24">
+        <Section>
+          <div className="mt-[50px] mb-[70px]">
+            <Header2sub
+              titulo={"PROYECTOS"}
+              subtitulo={"\n"}
+              texto={
+                "\n"
+              }
+            />
+          </div>
+        </Section>
+        
       {projects.map((project, i) => (
         <ProjectCard key={i} project={project} />
       ))}
-    </div>
+
+       
+      </div>
+      <Footer/>
+    </main>
   );
 };
 

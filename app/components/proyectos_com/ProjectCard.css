@@ -1,0 +1,169 @@
+
+/* ------------ CARD ------------ */
+/* tarjeta de informacion de cada proyecto*/
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--principal-morado-claro-10);
+  border-radius: 3rem;
+  margin-bottom: 0rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.15);
+  background-color: var(--principal-morado-claro-30);
+  transform: translateY(-2px);
+}
+
+
+/* --- Imagenes ---*/
+
+.slider-container {
+  width: 20%;
+  position: relative;
+}
+
+/* definir espacio entre slide */
+.slide-item {
+  padding: 0px; 
+}
+
+/* Imagen dentro del slide */
+.slider-image {
+  border-radius: 0.0rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+/* --- Texto ---*/
+
+/* contenedor de texto */
+.text-container {
+  width: 100%;
+  text-align: center;
+  padding: 2 0.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.project-title {
+  font-size: 2.5rem; 
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  
+  background: linear-gradient(10deg, var(--principal-morado), var(--principal-morado-claro));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-description {
+  color: var(--neutro-gris);
+  opacity: 0.7; 
+  font-size: 1.125rem; 
+  line-height: 1.7;
+  margin: 0;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Separador entre título y descripción */
+.project-title::after {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 3px;
+  background: linear-gradient(40deg, var(--principal-morado), var(--principal-morado-claro));
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+  }
+  
+  .slider-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .slider-image {
+    height: 10rem; 
+    width: 50%;
+  }
+}
+
+
+
+/* Alinear el separador a la izquierda en escritorio */
+@media (min-width: 768px) {
+  .project-title::after {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+/* Media queries para responsive design */
+@media (min-width: 768px) {
+  .text-container {
+    width: 50%;
+    text-align: left;
+    padding: 0 2rem; /* Más padding en escritorio */
+  }
+}
+
+/* Para tablets en modo vertical (≥ 640px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .text-container {
+    padding: 0 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+  .text-container {
+    padding: 0 0.25rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-description {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+  }
+}
+
+
+
