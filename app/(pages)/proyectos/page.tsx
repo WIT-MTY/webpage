@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Section from '@/app/components/general/Section';
 import ProjectCard from "@/app/components/proyectos_com/ProjectCard";
+import NextProjectCard from "@/app/components/proyectos_com/NextProjectCard"; 
 import Footer from "@/app/components/general/Footer";
 import Header2sub from '@/app/components/header2sub';
 import "slick-carousel/slick/slick.css";
@@ -12,6 +13,14 @@ interface Project {
   title: string;
   description: string;
   images: string[];
+}
+
+interface NextProject {
+  day: string;
+  month: string;
+  title: string;
+  image: string;
+  link?: string; 
 }
 
 const projects: Project[] = [
@@ -67,8 +76,38 @@ const projects: Project[] = [
   },
 ];
 
+const nextProjects: NextProject[] = [
+  {
+    day: "5",
+    month: "Febrero",
+    title: "Evento 1",
+    image:  "/images/proyectos/hack4her_flyer.png",
+    link: "https://www.websiteplanet.com/es/webtools/lorem-ipsum/",
+  },
+  {
+    day: "22",
+    month: "Abril",
+    title: "Evento 2",
+    image: "/images/proyectos/empower_hack.jpeg",
+    link: "https://www.websiteplanet.com/es/webtools/lorem-ipsum/",
+  },
+  {
+    day: "15",
+    month: "Marzo",
+    title: "Evento 3",
+    image: "/images/proyectos/empower_hack.jpeg",
+    link: "https://www.websiteplanet.com/es/webtools/lorem-ipsum/",
+  },
+  {
+    day: "1",
+    month: "Mayo",
+    title: "Evento 4",
+    image: "/images/proyectos/empower_hack.jpeg",
+    link: "https://www.websiteplanet.com/es/webtools/lorem-ipsum/",
+  },
+];
 
-// Componente principal que renderiza todas las tarjetas
+
 const ProjectShowcase: React.FC = () => {
   return (
     <main>
@@ -84,7 +123,40 @@ const ProjectShowcase: React.FC = () => {
             />
           </div>
         </Section>
-        
+      
+      <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">
+            Próximos Eventos
+          </h2>
+          
+          <div className="next-projects-container" style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2rem',
+            marginBottom: '3rem'
+          }}>
+            
+            <div className="hidden md:flex" style={{
+              display: 'flex',
+              gap: '2rem',
+              overflowX: 'auto',
+              paddingBottom: '1rem',
+              scrollbarWidth: 'thin',
+              scrollbarColor: 'var(--principal-morado-claro) #f1f1f1'
+            }}>
+              {nextProjects.map((project, index) => (
+                <div key={index} style={{
+                  minWidth: '400px',
+                  flex: '0 0 auto'
+                }}>
+                  <NextProjectCard project={project} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
       {projects.map((project, i) => (
         <ProjectCard key={i} project={project} />
       ))}
