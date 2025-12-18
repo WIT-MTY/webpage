@@ -17,8 +17,7 @@
 }
 
 .project-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 
-              0 4px 6px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(100, 17, 173, 0.15);
   background-color: var(--principal-morado-claro-30);
   transform: translateY(-2px);
 }
@@ -91,6 +90,91 @@
   background: linear-gradient(40deg, var(--principal-morado), var(--principal-morado-claro));
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
+}
+
+.ver-mas-btn {
+  align-self: flex-start;
+  padding: 5px 13px;
+  background-color: transparent;
+  border: 2px solid var(--secundario-morado-30);
+  color: var(--secundario-morado-30);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.ver-mas-btn:hover {
+  background-color: var(--secundario-morado-30);
+  color: var(--neutro-blanco);
+}
+
+/* Panel histórico desplegable */
+.historical-panel {
+  margin: 0 20px 20px;
+  padding: 35px;
+  border-radius: 0px;
+  background-color: var(--principal-morado-30);
+  animation: slideDown 0.3s ease-out;
+}
+
+.years-selector {
+  margin-bottom: 25px;
+}
+
+
+.years-buttons {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.year-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid var(--principal-morado);
+  color: var(--principal-morado);
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.year-btn:hover {
+  background-color: var(--principal-morado-20);
+}
+
+.year-btn.active {
+  background-color: var(--principal-morado);
+  color: white;
+  border-color: var(--principal-morado);
+}
+
+.year-details {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.historical-slider {
+  flex: 1;
+  max-width: 50%;
+}
+
+.historical-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.historical-description {
+  flex: 1;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--principal-morado);
 }
 
 
