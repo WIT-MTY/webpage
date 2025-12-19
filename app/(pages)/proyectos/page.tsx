@@ -173,7 +173,7 @@ const ProjectShowcase: React.FC = () => {
           </div>
         </Section>
       
-      <div className="mb-16">
+      <div className="mb-20">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">
             Próximos Eventos
           </h2>
@@ -189,7 +189,10 @@ const ProjectShowcase: React.FC = () => {
               display: 'flex',
               gap: '2rem',
               overflowX: 'auto',
-              paddingBottom: '1rem',
+              paddingTop:'2rem',
+              paddingLeft:'3rem',
+              paddingRight: '3rem',
+              paddingBottom: '0.2rem',
               scrollbarWidth: 'thin',
               scrollbarColor: 'var(--principal-morado-claro) #f1f1f1'
             }}>

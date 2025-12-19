@@ -10,6 +10,7 @@
   transition: all 0.3s ease;
   height: 450px;
   width: 200;
+  border-radius: 2rem;
 }
 
 .next-project-card:hover {
@@ -100,26 +101,28 @@
   padding-top: 0.5rem;
 }
 
-/* Estilo del link */
+
 .project-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--secundario-morado-30);
+  color: var(--principal-morado);
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--secundario-morado-30);
-  border-radius: 0;
+  border: 2px solid var(--principal-morado);
+  border-radius: 50px;
   transition: all 0.3s ease;
   background-color: transparent;
   cursor: pointer;
 }
 
 .project-link:hover {
-  background-color: var(--secundario-morado-30);
+  background: var(--principal-morado);
   color: var(--neutro-blanco);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 17, 173, 0.3);
 }
 
 
