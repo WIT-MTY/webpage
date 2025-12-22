@@ -2,37 +2,118 @@ import Footer from "./components/general/Footer";
 import Info from "./components/general/Info";
 import Image from "next/image";
 import Section from "./components/general/Section";
+import AnimatedPhotoGrid from "./components/AnimatedPhotoGrid";
 
 export default function Home() {
   return (
-    <main className="pt-24">
-      <div className="overflow-scroll">
+    <main>
+      {/* Hero Section con fotos animadas - EMPIEZA DESDE ARRIBA */}
+      <div className="relative w-full h-screen overflow-hidden">
+        <AnimatedPhotoGrid />
+        
+        {/* Overlay con z-index bajo para que el navbar quede encima */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-purple-900/40 to-black/50"></div>
+          
+          {/* Logo y texto */}
+          <div className="relative z-20 text-center px-4">
+            <div className="animate-fade-in">
+              <img 
+                src="/images/logo-white.png" 
+                alt="WIT Logo" 
+                className="w-80 h-auto mx-auto drop-shadow-2xl lg:w-96 mb-8"
+              />
+            </div>
+            
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg animate-fade-in" style={{animationDelay: '0.3s'}}>
+              Women in Tech
+            </h1>
+          </div>
+        </div>
+      </div>
 
-        <Section>
-          <div className="my-10 relative">
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in {
+          animation: fade-in 1.2s ease-out forwards;
+          opacity: 0;
+        }
+      `}} />
+      
+      <Section>
+        <div id="sobre-nosotras" className="flex flex-col md:flex-row items-stretch justify-center w-screen min-h-screen md:min-h-[90vh] bg-[#F9FAFB] text-gray-900">
+          {/* Imagen */}
+          <div className="w-full md:w-1/2 h-[50vh] md:h-[90vh]">
             <img
-              className="object-center object-cover w-full block"
-              src="/images/nuevoWIT.png"
-              alt="wit"
+              src="/images/wit25.JPG"
+              className="w-full h-full object-cover object-center"
+              alt="Sobre nosotras"
             />
           </div>
+          {/* Texto */}
+          <div className="w-full md:w-1/2 h-full flex flex-col justify-center px-10 md:px-20 py-12 space-y-6">
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Sobre{" "}
+              <span className="text-[#4703a6]">
+                Nosotras
+              </span>
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-600 max-w-xl">
+              Women in Technology es un grupo estudiantil del Tecnológico de Monterrey, Campus Monterrey.
+              Somos una comunidad de mujeres que busca reducir la brecha de género en el ámbito de la tecnología.
+            </p>
+            <a href="/integrantes"> 
+              <button className="w-fit mt-4 px-8 py-3 rounded-full bg-[#4703a6] text-white font-semibold hover:bg-[#5B21B6] transition">
+                Conócenos
+              </button>
+            </a>
+          </div>
+        </div>
+      </Section>
+      <hr />
+      <Section>
+        <div className="flex flex-col md:flex-row-reverse items-stretch justify-center w-screen min-h-screen md:min-h-[90vh] bg-white text-gray-900">
+          {/* Imagen */}
+          <div className="w-full md:w-1/2 h-[50vh] md:h-[90vh]">
+            <img
+              src="/images/proyectos/JTI24_3.JPG"
+              className="w-full h-full object-cover object-center"
+              alt="Proyectos"
+            />
+          </div>
+          {/* Texto */}
+          <div className="w-full md:w-1/2 h-full flex flex-col justify-center px-10 md:px-20 py-12 space-y-6">
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              <span className="text-[#4703a6]">
+                Proyectos
+              </span>
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-600 max-w-xl">
+              El grupo estudiantil realiza diversas actividades y eventos durante el semestre:
+              conferencias, Journey to Internship, talleres, Día de la Mujer, entre otros.
+              <br />
+              <span className="font-medium text-gray-700">¡Conoce los proyectos!</span>
+            </p>
+            <a href="/proyectos">
+              <button className="w-fit mt-4 px-8 py-3 rounded-full bg-[#4703a6] text-white font-semibold hover:bg-[#5B21B6] transition">
+                Ir a proyectos
+              </button>
+            </a>
+          </div>
+        </div>
+      </Section>
 
-        </Section>
-
-        <hr />
-
-        <Section>
-          <Info title="Sobre nosotras" button="Conócenos" image="/images/wit25.JPG" href="/integrantes" description="Women in Technology es un grupo estudiantil del Tecnológico de Monterrey, Campus Monterrey. \ Somos una comunidad de mujeres que busca atender la brecha de género en el ámbito de la tecnología." />
-        </Section>
-
-        <hr />
-
-        <Section>
-          <Info right title="Proyectos" button="Ir a proyectos" image="/images/proyectos/JTI24_3.JPG" href="/proyectos" description="El grupo estudiantil realiza diversas actividades y eventos durante el semestre: conferencias, Journey to Internship, talleres, Día de la Mujer, entre otros. \¡Conoce los proyectos!" />
-        </Section>
-
-        <Footer />
-      </div>
+      <Footer />
     </main>
   )
 }
