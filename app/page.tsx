@@ -3,6 +3,7 @@ import Info from "./components/general/Info";
 import Image from "next/image";
 import Section from "./components/general/Section";
 import AnimatedPhotoGrid from "./components/AnimatedPhotoGrid";
+import SponsorsCarousel from "./components/SponsorsCarousel";
 
 export default function Home() {
   return (
@@ -49,7 +50,11 @@ export default function Home() {
           opacity: 0;
         }
       `}} />
-      
+    {/* Sección de Patrocinadores */}
+    <Section>
+        <SponsorsCarousel />
+    </Section>
+    
       <Section>
         <div id="sobre-nosotras" className="flex flex-col md:flex-row items-stretch justify-center w-screen min-h-screen md:min-h-[90vh] bg-[#F9FAFB] text-gray-900">
           {/* Imagen */}

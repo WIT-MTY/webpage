@@ -13,7 +13,6 @@ export default function AnimatedPhotoGrid() {
     '/images/proyectos/Desayuno8_2.JPG',
     '/images/proyectos/JTI24_5.JPG',
     '/images/proyectos/JTI24_2.JPG',
-    '/images/proyectos/proy2.jpg',
     '/images/proyectos/proy1.jpg',
     '/images/proyectos/proy5.jpg',
     '/images/proyectos/proy7.jpg',
