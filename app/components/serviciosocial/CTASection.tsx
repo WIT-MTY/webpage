@@ -17,10 +17,6 @@ const CTASection = () => {
       </div>
 
       <div className="container mx-auto px-5 relative z-10">
-        <div className="inline-block mb-6 px-6 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
-          <span className="text-[#B49CFF] font-semibold text-sm tracking-wider uppercase">Únete al equipo</span>
-        </div>
-
         <h2 className="font-montserrat text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
           ¡Únete a la comunidad <span className="bg-gradient-to-r from-[#B49CFF] to-[#ff5795] bg-clip-text text-transparent">WitCode</span>!
         </h2>
