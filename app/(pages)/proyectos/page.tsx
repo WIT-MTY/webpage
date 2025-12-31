@@ -9,19 +9,17 @@ import Header2sub from '@/app/components/header2sub';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-interface YearData {
-  year: number;
-  images: string[];
-  description: string;
+interface StatItem {
+  value: string; 
+  label: string;         
+  isNumber?: boolean;   
 }
+
 interface Project {
   title: string;
   description: string;
   images: string[];
-  yearlyData?: YearData[];
-  // Parametro para definir si es un evento recurrente
-  isRecurring?: boolean;
-
+  stats?: StatItem[];
 }
 
 interface NextProject {
@@ -34,91 +32,84 @@ interface NextProject {
 
 const projects: Project[] = [
   {
-    title: "Conferencias motivacionales",
-    description:
-      "El grupo invita al alumnado a una serie de conferencias y talleres de diferentes temas motivacionales y sobre experiencias de mujeres dentro y fuera del área de ingeniería.",
-    images: [
-      "/images/proyectos/proy6.jpg",
-      "/images/proyectos/proy6.jpg",
-      "/images/proyectos/proy6.jpg"],
-    yearlyData: [
-    {year: 2025,
-      images: ["/images/proyectos/proy6.jpg","/images/proyectos/proy6.jpg","/images/proyectos/proy6.jpg","/images/proyectos/proy6.jpg"],
-      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit platea varius tincidunt, potenti faucibus molestie massa diam blandit per non euismod, posuere magnis fusce volutpat egestas pellentesque vitae odio tellus. Aliquet condimentum metus sociis pellentesque habitant penatibus ante tempor, cras habitasse aliquam interdum tempus fermentum vulputate, fringilla torquent libero lobortis ad duis turpis. Morbi condimentum mattis nulla senectus dignissim primis sociosqu dictumst hac, nullam interdum feugiat erat ridiculus magnis eros et, donec at metus facilisis mauris praesent nascetur congue."},
-    {year: 2024,
-      images: ["/images/proyectos/proy1.jpg","/images/proyectos/proy2.jpg","/images/proyectos/proy3.JPG","/images/proyectos/proy4.JPG"],
-      description: "Descripción del evento en 2024..."},
-    {year: 2023,
-      images: ["/images/proyectos/proy1.jpg","/images/proyectos/proy2.jpg","/images/proyectos/proy3.JPG","/images/proyectos/proy4.JPG"],
-      description: "Descripción del evento en 2023..."}]
-  },
-
-  {
     title: "Journey to Internship",
     description:
-      "Serie de conferencias y talleres impartidos por empresas reconocidas para preparar a estudiantes para internships.",
+      "Evento de dos días en el que las participantes tienen la oportunidad de visitar corporativos líderes en áreas STEAM y participar en talleres y cursos diseñados para fortalecer sus habilidades técnicas y profesionales, preparándolas para obtener su internship soñado.",
     images: [
-      "/images/proyectos/JTI24_5.JPG",
-      "/images/proyectos/JTI24_5.JPG",
-      "/images/proyectos/JTI24_5.JPG"],
-    yearlyData: [
-    {year: 2025,
-      images: ["/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG"],
-      description: "Descripción del evento en 2025..."},
-    {year: 2024,
-      images: ["/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG","/images/proyectos/JTI24_5.JPG"],
-      description: "Descripción del evento en 2024..."}]
+      "/images/proyectos/JTI_1.JPG", "/images/proyectos/JTI_2.JPG", "/images/proyectos/JTI_3.JPG",
+      "/images/proyectos/JTI_4.JPG", "/images/proyectos/JTI_5.JPG", "/images/proyectos/JTI_6.JPG",
+      "/images/proyectos/JTI_7.JPG", "/images/proyectos/JTI_8.JPG", "/images/proyectos/JTI_9.JPG",],
+    stats: [
+      {value: "+50", label: "Participantes", isNumber: true},
+      {value: "2 empresas sede de cada día del evento", label: "", isNumber: false},
+      {value: "Oportunidad de potenciar habilidades técnicas y hacer networking ", label: "", isNumber: false}]
   },
 
   {
-    title: "Desayuno del día de la mujer",
+    title: "Desayuno por Día de la Mujer",
     description:
-      "Desayuno conmemorativo donde alumnas, docentes y profesionales dialogan sobre experiencias y liderazgo femenino.",
+      "Evento de networking que consiste en un desayuno con panelistas e invitadas líderes en áreas STEAM. Durante el evento, las ponentes comparten sus trayectorias, logros y aprendizajes, además de brindar consejos prácticos e inspiración a las participantes para impulsar su desarrollo personal y profesional.",
     images: [
-      "/images/proyectos/desayuno.JPG",
-      "/images/proyectos/desayuno.JPG",
-      "/images/proyectos/desayuno.JPG"],
-    yearlyData: [
-    {year: 2025,
-      images: ["/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG"],
-      description: "Descripción del evento en 2025..."},
-    {year: 2024,
-      images: ["/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG","/images/proyectos/desayuno.JPG"],
-      description: "Descripción del evento en 2024..."}]
+      "/images/proyectos/desayuno_2.JPG", "/images/proyectos/desayuno_1.JPG", "/images/proyectos/desayuno_3.JPG",
+      "/images/proyectos/desayuno_4.JPG", "/images/proyectos/desayuno_5.JPG", "/images/proyectos/desayuno_6.JPG",
+      "/images/proyectos/desayuno_7.JPG", "/images/proyectos/desayuno_8.JPG", "/images/proyectos/desayuno_9.JPG", "/images/proyectos/desayuno_10.JPG"],
+    stats: [
+      {value: "+100", label: "Participantes", isNumber: true},
+      {value: "+5", label: "Panelistas líderes en STEAM", isNumber: true}]
   },
 
   {
     title: "Hack4Her",
     description:
-      "Hack4Her es un hackathon organizado por mujeres y dirigido a mujeres. El objetivo es fomentar la participación de mujeres en hackathons y en el área de la tecnología.",
-    images: [
-      "/images/proyectos/hack4her_flyer.png",
-      "/images/proyectos/hack4her_flyer.png",
-      "/images/proyectos/hack4her_flyer.png"],
-    yearlyData: [
-    {year: 2025,
-      images: ["/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png"],
-      description: "Descripción del evento en 2025..."},
-    {year: 2024,
-      images: ["/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png","/images/proyectos/hack4her_flyer.png"],
-      description: "Descripción del evento en 2024..."}]
+      "El primer hackathon nacional para mujeres en México. Durante 24 horas, equipos de cuatro participantes trabajan en la solución de retos de programación propuestos por una empresa líder internacional, compitiendo por grandes premios y la oportunidad de destacar su talento a nivel nacional.",
+    images: ["/images/proyectos/h4h_1.JPG", "/images/proyectos/h4h_2.JPG", "/images/proyectos/h4h_3.JPG",
+      "/images/proyectos/h4h_4.JPG", "/images/proyectos/h4h_5.png", "/images/proyectos/h4h_6.JPG",
+      "/images/proyectos/h4h_7.JPG", "/images/proyectos/h4h_8.JPG", "/images/proyectos/h4h_9.JPG", "/images/proyectos/h4h_10.JPG"],
+    stats: [
+      {value: "+350", label: "Participantes", isNumber: true},
+      {value: "Desafíos reales de empresas internacionales", label: "", isNumber: false},
+      {value: "+250 000", label: "Pesos en premios", isNumber: true},
+      {value: "Oportunidad de networking con reclutadores", label: "", isNumber: false}]
   },
 
   {
     title: "EmpowerHack",
     description:
-      "Un hackathon dirigido a chicas de secundaria con el propósito de fomentar la participación de mujeres en la tecnología desde una temprana edad.",
+      "Mini hackathon dirigido a niñas de nivel secundaria, donde las participantes ponen en práctica los conocimientos básicos de programación adquiridos a través de nuestro programa de servicio social Witcode. El evento fomenta la creatividad, el trabajo en equipo y el interés por las áreas tecnológicas desde una edad temprana.",
     images: [
-      "/images/proyectos/empower_hack.jpeg",
-      "/images/proyectos/empower_hack.jpeg",
-      "/images/proyectos/empower_hack.jpeg"],
-    yearlyData: [
-    {year: 2025,
-      images: ["/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg"],
-      description: "Descripción del evento en 2025..."},
-    {year: 2024,
-      images: ["/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg","/images/proyectos/empower_hack.jpeg"],
-      description: "Descripción del evento en 2024..."}]
+      "/images/proyectos/em_ha1.JPG", "/images/proyectos/em_ha2.JPG", "/images/proyectos/em_ha3.JPG",
+      "/images/proyectos/em_ha4.JPG", "/images/proyectos/em_ha5.JPG", "/images/proyectos/em_ha6.JPG"],
+    stats: [
+      {value: "+60", label: "Participantes", isNumber: true},
+      {value: "Participación de empresas líderes", label: "", isNumber: false},
+      {value: "Oportunidad de ganar muchos premios", label: "", isNumber: false}]
+  },
+  {
+    title: "Feria de Empresas Mujeres STEAM",
+    description:
+      "Feria con la participación de más de 15 empresas líderes, donde se presentan vacantes disponibles y se promueve el networking entre empresas y participantes. Las asistentes tienen la oportunidad de compartir su CV e interactuar de manera cercana y humana con reclutadores y representantes de las empresas.",
+    images: [
+      "/images/proyectos/feria_1.JPG", "/images/proyectos/feria_2.JPG", "/images/proyectos/feria_3.JPG",
+      "/images/proyectos/feria_4.JPG", "/images/proyectos/feria_5.JPG", "/images/proyectos/feria_6.JPG"],
+    stats: [
+      {value: "+180", label: "Participantes", isNumber: true},
+      {value: "+15", label: "Empresas líderes en STEAM", isNumber: true},
+      {value: "Oportunidad de ser reclutado para un internship", label: "", isNumber: false},
+      {value: "Networking de la mano de reclutadores", label: "", isNumber: false}]
+  },
+
+  {
+    title: "Reunión Nacional de Mujeres STEAM",
+    description:
+      "Evento de networking que reúne a más de 100 mujeres desde nivel secundaria hasta universitario, junto con empresarias, profesionistas y maestras. A través de diversas actividades, se comparten experiencias, aprendizajes y consejos clave para sobresalir y desarrollarse con éxito en las áreas STEAM.",
+    images: [
+      "/images/proyectos/reunion_1.JPG", "/images/proyectos/reunion_2.JPG", "/images/proyectos/reunion_3.JPG",
+      "/images/proyectos/reunion_4.JPG", "/images/proyectos/reunion_5.JPG", "/images/proyectos/reunion_6.JPG"],
+    stats: [
+      {value: "+150", label: "Participantes", isNumber: true},
+      {value: "+10", label: "Panelistas", isNumber: true},
+      {value: "Oportunidad de networking con mujeres en la industria STEAM", label: "", isNumber: false},
+      {value: "Oportunidad de aprender de expertas", label: "", isNumber: false}]
   },
 ];
 
@@ -129,30 +120,6 @@ const nextProjects: NextProject[] = [
     title: "Run4Wit",
     image:  "/images/proyectos/run4wit_ex.png",
     link: "https://www.instagram.com/p/DRfvTJcjSN1/?img_index=1",
-  },
-
-  {
-    day: "22",
-    month: "Abril",
-    title: "Evento 2",
-    image: "/images/proyectos/empower_hack.jpeg",
-    link: "https://www.instagram.com/wit.mty/",
-  },
-
-  {
-    day: "15",
-    month: "Marzo",
-    title: "Evento 3",
-    image: "/images/proyectos/empower_hack.jpeg",
-    link: "https://www.instagram.com/wit.mty/",
-  },
-
-  {
-    day: "1",
-    month: "Mayo",
-    title: "Evento 4",
-    image: "/images/proyectos/empower_hack.jpeg",
-    link: "https://www.instagram.com/wit.mty/",
   },
 ];
 
