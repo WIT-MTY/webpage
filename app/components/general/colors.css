@@ -1,0 +1,48 @@
+
+/* paleta de colores WIT */
+
+:root {
+    /* colores principales*/
+    --principal-morado: #6411AD;
+    --principal-morado-10: #6411AD1A;
+    --principal-morado-20: #6411AD33;
+    --principal-morado-30: #6411AD4D;
+
+    --principal-morado-claro: #B49CFF;
+    --principal-morado-claro-10: #B49CFF1A;
+    --principal-morado-claro-20: #B49CFF33;
+    --principal-morado-claro-30: #B49CFF4D;
+
+    /* colores secundarios */
+    --secundario-morado: #47126b;
+    --secundario-morado-10: #47126b1A;
+    --secundario-morado-20: #47126b33;
+    --secundario-morado-30: #47126b4D;
+
+    --secundario-morado-claro: #c6c8ee;
+    --secundario-morado-claro-10: #c6c8ee1A;
+    --secundario-morado-claro-20: #c6c8ee33;
+    --secundario-morado-claro-30: #c6c8ee4D;
+    
+    --secundario-rosa: #ff5795; 
+    --secundario-rosa: #ff57951A; 
+    --secundario-rosa: #ff579533; 
+    --secundario-rosa: #ff57954D; 
+
+    /*colores neutros */
+    --neutro-negro: #000000;
+    --neutro-negro-10: #0000001A;
+    --neutro-negro-20: #00000033;
+    --neutro-negro-30: #0000004D;
+
+    --neutro-gris: #2e2d2d;
+    --neutro-gris-10: #2e2d2d1A;
+    --neutro-gris-20: #2e2d2d33;
+    --neutro-gris-30: #2e2d2d4D;
+
+    --neutro-blanco: #FFFFFF;
+    --neutro-blanco-10: #FFFFFF1A;
+    --neutro-blanco-20: #FFFFFF33;
+    --neutro-blanco-30: #FFFFFF4D;
+
+}
