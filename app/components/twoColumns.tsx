@@ -1,4 +1,3 @@
-//twoColumns.tsx
 import React from "react";
 
 interface Column {

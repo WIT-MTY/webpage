@@ -1,96 +1,53 @@
+import Header2sub from "@/app/components/header2sub";
 import Footer from "@/app/components/general/Footer";
+import Carousel from "@/app/components/carousel";
 import Section from "@/app/components/general/Section";
-import HeroSection from "@/app/components/serviciosocial/HeroSection";
-import ObjectiveMission from "@/app/components/serviciosocial/ObjectiveMission";
-import Timeline from "@/app/components/serviciosocial/Timeline";
-import Carousel from "@/app/components/serviciosocial/CarouselServicioSocial";
-import RolesGrid from "@/app/components/serviciosocial/RolesGrid";
-import StatsSection from "@/app/components/serviciosocial/StatsSection";
-import BenefitsList from "@/app/components/serviciosocial/BenefitsList";
-import CTASection from "@/app/components/serviciosocial/CTASection";
+import TwoColumns from "@/app/components/twoColumns";
 import React from "react";
 
 const Page = () => {
   return (
-    <div>
-      {/* Hero Section */}
-      <HeroSection />
-
-      {/* ¿Qué es WitCode? */}
+    <div className="pt-24">
+      {/* Header Section */}
       <Section>
-        <div className="py-20">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#911876] bg-clip-text text-transparent">
-            ¿Qué es WitCode?
-          </h2>
-          <p className="text-center text-slate-600 text-lg mb-16 max-w-2xl mx-auto">
-            Nuestro programa de servicio social enfocado en disminuir la brecha de género en tecnología 
-            mediante educación accesible e inclusiva
-          </p>
-          <ObjectiveMission />
-          
-          {/* Foto grupal */}
-          <div className="mt-16 rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src="images/serviciosocial/abajo_de_que_es_witcode.JPG"
-              alt="Foto grupal WitCode"
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
+        <div className="mt-[50px]">
+          <Header2sub
+            titulo={"SERVICIO SOCIAL"}
+            subtitulo={"OBJETIVO"}
+            texto={
+              "WitCode tiene como objetivo atender la brecha de género en la tecnología por medio de una educación que brinde herramientas para nivelar las oportunidades de manera igualitaria en este ámbito. Lo anterior, mediante talleres a alumnas de 1°a 3° de secundaria de la escuela Ciudad de los Niños."
+            }
+          />
         </div>
       </Section>
 
-      {/* ¿Cómo funciona? */}
-      <div className="bg-gradient-to-b from-white to-[#f8f6fc] py-20">
-        <Section>
-          <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#911876] bg-clip-text text-transparent">
-            ¿Cómo funciona?
-          </h2>
-          <p className="text-center text-slate-600 text-lg mb-16 max-w-2xl mx-auto">
-            Tu experiencia como tutor/a en WitCode
-          </p>
-          <Timeline />
-          
-          {/* Carrusel de fotos */}
-          <div className="mt-16">
-            <Carousel />
-          </div>
-        </Section>
-      </div>
+      {/* Carousel Section */}
+        <Carousel />
 
-      {/* Roles Disponibles */}
+      {/* TwoColumns Section */}
       <Section>
-        <div className="py-20">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#911876] bg-clip-text text-transparent">
-            Roles disponibles
-          </h2>
-          <p className="text-center text-slate-600 text-lg mb-16 max-w-2xl mx-auto">
-            Encuentra tu forma de contribuir
-          </p>
-          <RolesGrid />
-        </div>
+        <TwoColumns
+          columns={[
+            {
+              heading: "Programa",
+              items: ["Clases semanales sobre diferentes temas tecnológicos.", 
+                      "Se tienen grupos de principiantes (para alumnas nuevas al programa) y avanzadas.", 
+                      "Modalidad en línea y con sesiones presenciales de inicio y clausura."],
+            },
+            {
+              heading: "Impacto",
+              items: ["94 participantes.", 
+                      "76 estudiantes de universidad realizando su servicio social.", 
+                      "90% de permanencia en los talleres."],
+              optionalText: "En cifras totales del 2024."
+            },
+            
+          ]}
+        />
       </Section>
 
-      {/* Nuestro Impacto */}
-      <StatsSection />
-
-      {/* Beneficios */}
-      <Section>
-        <div className="py-20">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#911876] bg-clip-text text-transparent">
-            Beneficios
-          </h2>
-          <p className="text-center text-slate-600 text-lg mb-16 max-w-2xl mx-auto">
-            ¿Por qué unirte a WitCode?
-          </p>
-          <BenefitsList />
-        </div>
-      </Section>
-
-      {/* CTA Final */}
-      <CTASection />
-
-      {/* Footer */}
-      <Footer />
+      {/* Footer Section */}
+        <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-//header2sub.tsx
 'use client'
 import clsx from 'clsx'
 import React from 'react'

@@ -1,4 +1,3 @@
-//Section.tsx
 import { ReactNode } from "react"
 
 const Section = ({children}: {children:ReactNode}) => {
