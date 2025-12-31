@@ -36,25 +36,28 @@ const RolesGrid = () => {
       {roles.map((role, index) => (
         <div
           key={index}
-          className="group bg-white rounded-3xl p-10 text-center border-2 border-transparent hover:border-[#911876] transition-all duration-400 shadow-lg hover:shadow-2xl hover:-translate-y-4 hover:scale-105 relative overflow-hidden"
+          className="group bg-white rounded-3xl p-10 text-center border-2 border-[#c6c8ee]/40 hover:border-[#6411AD] transition-all duration-400 shadow-lg hover:shadow-2xl hover:-translate-y-4 hover:scale-105 relative overflow-hidden"
         >
           {/* Background gradient effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[rgba(71,18,107,0.05)] to-[rgba(145,24,118,0.05)] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
-          
+          <div className="absolute inset-0 bg-gradient-to-br from-[#6411AD]/5 to-[#ff5795]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+
+          {/* Decorative corner */}
+          <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#B49CFF]/20 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+
           {/* Icon Container */}
-          <div className="relative z-10 mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-[rgba(71,18,107,0.1)] to-[rgba(145,24,118,0.1)] flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-[#47126b] group-hover:to-[#911876] transition-all duration-500 group-hover:rotate-[360deg]">
-            <div className="text-[#911876] group-hover:text-white transition-colors duration-400">
+          <div className="relative z-10 mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-[#6411AD]/10 to-[#B49CFF]/20 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-[#47126b] group-hover:to-[#6411AD] transition-all duration-500 group-hover:rotate-[360deg] shadow-md">
+            <div className="text-[#6411AD] group-hover:text-white transition-colors duration-400">
               {role.icon}
             </div>
           </div>
 
           {/* Title */}
-          <h4 className="relative z-10 font-montserrat text-2xl font-bold text-[#47126b] mb-4">
+          <h4 className="relative z-10 font-montserrat text-2xl font-bold text-[#47126b] mb-4 group-hover:text-[#6411AD] transition-colors">
             {role.title}
           </h4>
 
           {/* Description */}
-          <p className="relative z-10 text-slate-600 leading-relaxed">
+          <p className="relative z-10 text-[#2e2d2d] leading-relaxed">
             {role.description}
           </p>
         </div>

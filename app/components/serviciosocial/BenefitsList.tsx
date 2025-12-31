@@ -30,24 +30,27 @@ const BenefitsList = () => {
       {benefits.map((benefit, index) => (
         <div
           key={index}
-          className="group flex gap-5 p-6 bg-white rounded-2xl border-l-4 border-[#911876] shadow-lg hover:shadow-xl hover:translate-x-3 transition-all duration-400 relative overflow-hidden"
+          className="group flex gap-5 p-6 bg-white rounded-2xl border-l-4 border-[#6411AD] shadow-lg hover:shadow-xl hover:translate-x-3 transition-all duration-400 relative overflow-hidden"
         >
           {/* Animated border effect */}
-          <div className="absolute left-0 top-0 w-1 h-0 bg-gradient-to-b from-[#47126b] to-[#ff2871] group-hover:h-full transition-all duration-400" />
+          <div className="absolute left-0 top-0 w-1 h-0 bg-gradient-to-b from-[#47126b] to-[#ff5795] group-hover:h-full transition-all duration-400" />
+
+          {/* Background accent */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#B49CFF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
           {/* Check Icon */}
-          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#47126b] to-[#911876] flex items-center justify-center group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-400">
+          <div className="relative z-10 flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#47126b] to-[#6411AD] flex items-center justify-center group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-400 shadow-md">
             <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white">
               <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
             </svg>
           </div>
 
           {/* Content */}
-          <div className="flex-1">
-            <strong className="block text-[#47126b] font-bold mb-1 group-hover:text-[#911876] transition-colors">
+          <div className="flex-1 relative z-10">
+            <strong className="block text-[#47126b] font-bold mb-1 group-hover:text-[#6411AD] transition-colors">
               {benefit.title}
             </strong>
-            <p className="text-slate-600 text-sm">
+            <p className="text-[#2e2d2d] text-sm">
               {benefit.description}
             </p>
           </div>

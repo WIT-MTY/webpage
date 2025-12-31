@@ -59,11 +59,15 @@ const StatsSection = () => {
       ref={sectionRef}
       className="relative py-20 overflow-hidden"
     >
-      <div className="container mx-auto px-5">
-        <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#911876] bg-clip-text text-transparent">
+      {/* Background decorative elements */}
+      <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#B49CFF]/5 blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-64 h-64 rounded-full bg-[#ff5795]/5 blur-3xl" />
+
+      <div className="container mx-auto px-5 relative z-10">
+        <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-5 bg-gradient-to-r from-[#47126b] to-[#6411AD] bg-clip-text text-transparent">
           Nuestro Impacto
         </h2>
-        <p className="text-center text-slate-600 text-lg mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-[#2e2d2d] text-lg mb-16 max-w-2xl mx-auto">
           En cifras totales del 2024
         </p>
 
@@ -71,13 +75,16 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group text-center p-10 bg-gradient-to-br from-[#47126b] to-[#911876] rounded-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-400 shadow-lg hover:shadow-2xl relative overflow-hidden"
+              className="group text-center p-10 bg-gradient-to-br from-[#47126b] to-[#6411AD] rounded-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-400 shadow-lg hover:shadow-2xl relative overflow-hidden"
               style={{
                 animation: isVisible ? `fadeInUp 0.6s ease-out ${index * 0.2}s both` : 'none'
               }}
             >
               {/* Shimmer effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-600" />
+
+              {/* Decorative corner */}
+              <div className="absolute top-0 right-0 w-16 h-16 bg-[#ff5795]/20 rounded-bl-3xl" />
 
               <div className="relative z-10">
                 <div className="font-montserrat text-6xl md:text-7xl font-extrabold text-white mb-3">

@@ -64,31 +64,31 @@ const Timeline = () => {
         <div key={index} className="flex gap-8 mb-12 last:mb-0 relative group opacity-0 -translate-x-12 animate-slide-in" style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}>
           {/* Vertical Line */}
           {index !== timelineItems.length - 1 && (
-            <div className="absolute left-10 top-20 w-0.5 h-[calc(100%+3rem)] bg-gradient-to-b from-[#911876] to-[#c6c8ee]" />
+            <div className="absolute left-10 top-20 w-0.5 h-[calc(100%+3rem)] bg-gradient-to-b from-[#6411AD] to-[#c6c8ee]" />
           )}
 
           {/* Icon Circle */}
-          <div className="relative z-10 flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-br from-[#47126b] to-[#911876] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-400">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#911876] to-[#ff2871] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+          <div className="relative z-10 flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-br from-[#47126b] to-[#6411AD] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-400">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#6411AD] to-[#ff5795] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
             <div className="relative z-10">{item.icon}</div>
           </div>
 
           {/* Content Card */}
-          <div className="flex-1 bg-white rounded-2xl p-8 border-l-4 border-[#911876] shadow-lg group-hover:translate-x-3 group-hover:shadow-xl transition-all duration-400">
-            <h3 className="font-montserrat text-2xl font-bold text-[#47126b] mb-4">
+          <div className="flex-1 bg-white rounded-2xl p-8 border-l-4 border-[#6411AD] shadow-lg group-hover:translate-x-3 group-hover:shadow-xl transition-all duration-400">
+            <h3 className="font-montserrat text-2xl font-bold text-[#47126b] mb-4 group-hover:text-[#6411AD] transition-colors">
               {item.title}
             </h3>
             {item.items ? (
               <ul className="space-y-3">
                 {item.items.map((listItem, idx) => (
-                  <li key={idx} className="relative pl-6 text-slate-600 leading-relaxed group/item hover:pl-8 hover:text-[#911876] transition-all duration-300">
-                    <span className="absolute left-0 text-[#911876] font-bold group-hover/item:translate-x-1 transition-transform">▸</span>
+                  <li key={idx} className="relative pl-6 text-[#2e2d2d] leading-relaxed group/item hover:pl-8 hover:text-[#6411AD] transition-all duration-300">
+                    <span className="absolute left-0 text-[#ff5795] font-bold group-hover/item:translate-x-1 transition-transform">▸</span>
                     {listItem}
                   </li>
                 ))}
               </ul>
             ) : (
-              <div className="text-slate-600 leading-relaxed">
+              <div className="text-[#2e2d2d] leading-relaxed">
                 {item.content}
               </div>
             )}
