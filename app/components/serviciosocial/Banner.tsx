@@ -57,21 +57,6 @@ const Banner = () => {
         <p className="text-xl md:text-2xl text-white/90 mb-12 font-raleway animate-fade-in-up-delay-200 leading-relaxed">
           Inspirando futuras líderes tech con WitCode
         </p>
-        <div className="flex gap-4 justify-center items-center animate-fade-in-up-delay-400">
-          <div className="flex items-center gap-2 text-white/90">
-            <svg className="w-5 h-5 text-[#ff5795]" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"/>
-            </svg>
-            <span className="text-sm">94 Alumnas</span>
-          </div>
-          <div className="w-1 h-1 rounded-full bg-white/50" />
-          <div className="flex items-center gap-2 text-white/90">
-            <svg className="w-5 h-5 text-[#B49CFF]" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
-            </svg>
-            <span className="text-sm">76 Tutores</span>
-          </div>
-        </div>
       </div>
 
       {/* Indicador de scroll */}
