@@ -27,12 +27,12 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const settings: Settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,       
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
   };
@@ -43,6 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="project-card-wrapper">
 
       <div className="project-card">
+
         {/* Slider a la izquierda */}
         <div className="slider-container">
           <Slider {...settings}>
@@ -62,12 +63,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="text-container">
           <h2 className="project-title">{project.title}</h2>
           <p className="project-description">{project.description}</p>
-        </div>
-      </div>
-        
-      <div className="project-card-stats">
-        {/* Estadísticas */}
-        {shouldShowStats && (
           <div>
             {project.stats && project.stats.length > 0 && (
               <div className="stats-grid">
@@ -80,8 +75,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </div>
             )}    
           </div>
-        )}
+        </div>
+        
       </div>
+        
+      
       
     </div>
   );
