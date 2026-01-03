@@ -142,7 +142,7 @@ const ProjectShowcase: React.FC = () => {
   return (
     <main>
       <Banner bannerComp={bannerData} />
-
+      
       <div className="overflow-scroll p-10 md:pt-24">
         
       <div className="mb-20">
@@ -185,9 +185,8 @@ const ProjectShowcase: React.FC = () => {
         <ProjectCard key={i} project={project} />
       ))}
 
-       
+       <Footer/>
       </div>
-      <Footer/>
     </main>
   );
 };
