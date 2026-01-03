@@ -5,7 +5,7 @@ import Section from '@/app/components/general/Section';
 import ProjectCard from "@/app/components/proyectos_com/ProjectCard";
 import NextProjectCard from "@/app/components/proyectos_com/NextProjectCard"; 
 import Footer from "@/app/components/general/Footer";
-import Header2sub from '@/app/components/header2sub';
+import Banner from "@/app/components/serviciosocial/Banner";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -29,6 +29,20 @@ interface NextProject {
   image: string;
   link?: string; 
 }
+
+interface BannerData {
+  title: string;
+  highlightTitle: string;
+  description: string;
+  image: string;
+}
+
+const bannerData = {
+  title: "Proyectos con",
+  highlightTitle: "Impacto",
+  description: "Proyectos que rompen barreras y abren caminos",
+  image: "/images/proyectos/banner_proyectos.JPG"
+};
 
 const projects: Project[] = [
   {
@@ -127,19 +141,10 @@ const nextProjects: NextProject[] = [
 const ProjectShowcase: React.FC = () => {
   return (
     <main>
+      <Banner bannerComp={bannerData} />
+
       <div className="overflow-scroll p-10 md:pt-24">
-        <Section>
-          <div className="mt-[50px] mb-[70px]">
-            <Header2sub
-              titulo={"PROYECTOS"}
-              subtitulo={"\n"}
-              texto={
-                "\n"
-              }
-            />
-          </div>
-        </Section>
-      
+        
       <div className="mb-20">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">
             Próximos Eventos

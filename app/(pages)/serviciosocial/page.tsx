@@ -10,11 +10,25 @@ import BenefitsList from "@/app/components/serviciosocial/BenefitsList";
 import CTASection from "@/app/components/serviciosocial/CTASection";
 import React from "react";
 
+interface BannerData {
+  title: string;
+  highlightTitle: string;
+  description: string;
+  image: string;
+}
+
+const bannerData = {
+  title: "Un Servicio Social con",
+  highlightTitle: "Impacto",
+  description: "Inspirando futuras líderes tech con WitCode",
+  image: "/images/serviciosocial/abajo_de_que_es_witcode.JPG"
+};
+
 const Page = () => {
   return (
     <div>
       {/* Banner */}
-      <Banner />
+      <Banner bannerComp={bannerData} />
 
       {/* ¿Qué es WitCode? */}
       <Section>
@@ -41,6 +55,7 @@ const Page = () => {
                 className="w-full h-[400px] object-cover"
               />
             </div>
+
           </div>
         </div>
       </Section>

@@ -1,7 +1,18 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
 
-const Banner = () => {
+interface BannerData {
+  title: string;
+  highlightTitle: string;
+  description: string;
+  image: string;
+}
+
+interface BannerProps {
+  bannerComp: BannerData;
+}
+
+const Banner: React.FC<BannerProps> = ({bannerComp}) => {
   const particlesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -30,7 +41,7 @@ const Banner = () => {
       {/* Img de fondo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/serviciosocial/abajo_de_que_es_witcode.JPG)' }}
+        style={{ backgroundImage: `url(${bannerComp.image})` }}
       />
 
       {/* Overlay oscuro*/}
@@ -52,10 +63,10 @@ const Banner = () => {
       {/* Contenido */}
       <div className="relative z-10 text-center px-5 py-20 max-w-4xl animate-fade-in-up">
         <h1 className="font-montserrat text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-2xl leading-tight">
-          Un Servicio Social con <span className="bg-gradient-to-r from-[#B49CFF] to-[#ff5795] bg-clip-text text-transparent">Impacto</span>
+          {bannerComp.title} <span className="bg-gradient-to-r from-[#B49CFF] to-[#ff5795] bg-clip-text text-transparent"> {bannerComp.highlightTitle} </span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-12 font-raleway animate-fade-in-up-delay-200 leading-relaxed">
-          Inspirando futuras líderes tech con WitCode
+          {bannerComp.description}
         </p>
       </div>
 

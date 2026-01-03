@@ -24,7 +24,6 @@ interface ProjectCardProps {
 }
 
 
-
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const settings: Settings = {
     dots: false,
