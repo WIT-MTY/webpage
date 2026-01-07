@@ -55,7 +55,7 @@ export default function SponsorsCarousel() {
     ];
 
     return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full bg-white py-16 overflow-x-hidden">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
         Nuestros <span className="text-[#4703a6]">Patrocinadores</span>
         </h2>
@@ -68,20 +68,24 @@ export default function SponsorsCarousel() {
         {/* Carrusel - CON scroll manual */}
         <div 
             ref={scrollRef}
-            className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing"
+        className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing"
         >
             <div className={`flex ${!isPaused ? 'animate-scroll-infinite' : ''}`}>
             {/* Repetimos los logos 3 veces para el efecto infinito */}
             {[1, 2, 3].map((group) => (
                 <div key={group} className="flex items-center gap-10 px-8 shrink-0">
                 {logos.map((logo, idx) => (
-                    <img 
+                    <div 
                     key={`${group}-${idx}`}
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="h-20 md:h-28 w-auto object-contain hover:scale-110 transition-transform duration-300 pointer-events-none select-none"
-                    draggable="false"
+                    className="w-32 md:w-40 h-20 md:h-28 flex items-center justify-center"
+                    >
+                    <img 
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="max-w-full max-h-full w-auto h-auto object-contain hover:scale-110 transition-transform duration-300 pointer-events-none select-none"
+                        draggable="false"
                     />
+                    </div>
                 ))}
                 </div>
             ))}
