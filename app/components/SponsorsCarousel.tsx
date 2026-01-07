@@ -12,7 +12,7 @@ export default function SponsorsCarousel() {
     if (!scrollContainer) return;
 
     const handleScroll = () => {
-      // Pausar animación cuando el usuario hace scroll
+
         setIsPaused(true);
 
         if (scrollTimeout) {
@@ -50,7 +50,7 @@ export default function SponsorsCarousel() {
         { src: "/images/aliados/Carrier_logo.png", alt: "Carrier" },
         { src: "/images/aliados/Microplus_fondo-removebg-preview.png", alt: "Microplus" },
         { src: "/images/aliados/csoftmty_logo.png", alt: "CsoftMty" },
-        { src: "/images/aliados/Trophe_logo.png", alt: "Trophe" },
+        { src: "/images/aliados/upnow_logo2.png", alt: "Upnow" },
         { src: "/images/aliados/clarios-logo2.png", alt: "Clarios" },
     ];
 
@@ -59,7 +59,6 @@ export default function SponsorsCarousel() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
         Nuestros <span className="text-[#4703a6]">Patrocinadores</span>
         </h2>
-        
       {/* Contenedor del carrusel infinito */}
         <div className="relative w-full">
         {/* Gradientes en los bordes */}
