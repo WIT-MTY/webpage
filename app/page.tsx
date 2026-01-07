@@ -94,9 +94,10 @@ export default function Home() {
           {/* Imagen */}
           <div className="w-full md:w-1/2 h-[50vh] md:h-[90vh]">
             <img
-              src="/images/proyectos/JTI24_3.JPG"
-              className="w-full h-full object-cover object-center"
-              alt="Proyectos"
+          src="/images/H4HPREMIOS-33.jpg"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: '20% center' }}
+          alt="Proyectos"
             />
           </div>
           {/* Texto */}
