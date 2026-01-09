@@ -39,7 +39,7 @@ interface BannerData {
 
 const bannerData = {
   title: "Proyectos con",
-  highlightTitle: "Impacto",
+  highlightTitle: "Propósito",
   description: "Proyectos que rompen barreras y abren caminos",
   image: "/images/proyectos/banner_proyectos.JPG"
 };
@@ -81,7 +81,6 @@ const projects: Project[] = [
       "/images/proyectos/h4h_7.JPG", "/images/proyectos/h4h_8.JPG", "/images/proyectos/h4h_9.JPG", "/images/proyectos/h4h_10.JPG"],
     stats: [
       {value: "+350", label: "Participantes", isNumber: true},
-      {value: "Desafíos reales de empresas internacionales", label: "", isNumber: false},
       {value: "+250 000", label: "Pesos en premios", isNumber: true},
       {value: "Oportunidad de networking con reclutadores", label: "", isNumber: false}]
   },
@@ -106,7 +105,6 @@ const projects: Project[] = [
       "/images/proyectos/feria_1.JPG", "/images/proyectos/feria_2.JPG", "/images/proyectos/feria_3.JPG",
       "/images/proyectos/feria_4.JPG", "/images/proyectos/feria_5.JPG", "/images/proyectos/feria_6.JPG"],
     stats: [
-      {value: "+180", label: "Participantes", isNumber: true},
       {value: "+15", label: "Empresas líderes en STEAM", isNumber: true},
       {value: "Oportunidad de ser reclutado para un internship", label: "", isNumber: false},
       {value: "Networking de la mano de reclutadores", label: "", isNumber: false}]
@@ -122,8 +120,7 @@ const projects: Project[] = [
     stats: [
       {value: "+150", label: "Participantes", isNumber: true},
       {value: "+10", label: "Panelistas", isNumber: true},
-      {value: "Oportunidad de networking con mujeres en la industria STEAM", label: "", isNumber: false},
-      {value: "Oportunidad de aprender de expertas", label: "", isNumber: false}]
+      {value: "Oportunidad de networking con mujeres en la industria STEAM", label: "", isNumber: false}]
   },
 ];
 

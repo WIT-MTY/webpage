@@ -57,7 +57,7 @@ export default function SponsorsCarousel() {
     return (
     <div className="w-full bg-white py-16 overflow-x-hidden">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-        Nuestros <span className="text-[#4703a6]">Patrocinadores</span>
+        Nuestros <span className="text-[#4703a6]">Aliados</span>
         </h2>
       {/* Contenedor del carrusel infinito */}
         <div className="relative w-full">

@@ -20,7 +20,7 @@ export default function Home() {
           <div className="relative z-20 text-center px-4">
             <div className="animate-fade-in">
               <img 
-                src="/images/logo-white.png" 
+                src="/images/logo_wit/logo_nuevo_blanco.png" 
                 alt="WIT Logo" 
                 className="w-80 h-auto mx-auto drop-shadow-2xl lg:w-96 mb-8"
               />
