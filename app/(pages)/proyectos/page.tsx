@@ -191,8 +191,8 @@ const ProjectShowcase: React.FC = () => {
       
       
         <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-20 bg-gradient-to-r from-[#47126b] to-[#6411AD] bg-clip-text text-transparent">
-  Conoce nuestros proyectos
-</h2>
+          Conoce nuestros proyectos
+        </h2>
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
