@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react';
 
 export default function AnimatedPhotoGrid() {
   const allPhotos: string[] = [
-    '/images/wit25.JPG',
-    '/images/proyectos/JTI24_3.JPG',
-    '/images/reto1.jpeg',
-    '/images/witcode1.JPG',
-    '/images/witcode2.JPG',
+    '/images/home/home_1.JPG', //cambiar a otra foto
+    '/images/home/home_2.JPG',
+    '/images/home/home_1.JPG', //cambiar a otra foto
+    '/images/home/home_1.jpeg', //cambiar a otra foto
+    '/images/home/home_3.JPG',
     '/images/proyectos/Desayuno8_1.JPG',
     '/images/proyectos/Desayuno8_2.JPG',
     '/images/proyectos/JTI24_5.JPG',
@@ -20,7 +20,7 @@ export default function AnimatedPhotoGrid() {
     '/images/proyectos/proy10.jpg',
     '/images/_DSC0002.JPG',
     '/images/_DSC0015.JPG',
-    '/images/_DSC0022.JPG',
+    '/images/home/home_1.JPG',
     '/images/_DSC0024.JPG',
     '/images/H4HPREMIOS-20.jpg',
     '/images/H4HPREMIOS-33.jpg',
