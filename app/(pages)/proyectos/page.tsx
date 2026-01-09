@@ -77,7 +77,7 @@ const projects: Project[] = [
     description:
       "El primer hackathon nacional para mujeres en México. Durante 24 horas, equipos de cuatro participantes trabajan en la solución de retos de programación propuestos por una empresa líder internacional, compitiendo por grandes premios y la oportunidad de destacar su talento a nivel nacional.",
     images: ["/images/proyectos/h4h_1.JPG", "/images/proyectos/h4h_2.JPG", "/images/proyectos/h4h_3.JPG",
-      "/images/proyectos/h4h_4.JPG", "/images/proyectos/h4h_5.png", "/images/proyectos/h4h_6.JPG",
+      "/images/proyectos/h4h_5.png", "/images/proyectos/h4h_6.JPG",
       "/images/proyectos/h4h_7.JPG", "/images/proyectos/h4h_8.JPG", "/images/proyectos/h4h_9.JPG", "/images/proyectos/h4h_10.JPG"],
     stats: [
       {value: "+350", label: "Participantes", isNumber: true},
@@ -125,13 +125,14 @@ const projects: Project[] = [
 ];
 
 const nextProjects: NextProject[] = [
-  {
+  //Ejemplo
+  /*{
     day: "29",
     month: "Noviembre",
     title: "Run4Wit",
     image:  "/images/proyectos/run4wit_ex.png",
     link: "https://www.instagram.com/p/DRfvTJcjSN1/?img_index=1",
-  },
+  },*/
 ];
 
 
@@ -142,46 +143,60 @@ const ProjectShowcase: React.FC = () => {
       
       <div className="overflow-scroll p-10 md:pt-24">
         
-      <div className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">
-            Próximos Eventos
-          </h2>
-          
-          <div className="next-projects-container" style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '2rem',
-            marginBottom: '3rem'
-          }}>
-            
-            <div className="hidden md:flex" style={{
-              display: 'flex',
-              gap: '2rem',
-              overflowX: 'auto',
-              paddingTop:'2rem',
-              paddingLeft:'3rem',
-              paddingRight: '3rem',
-              paddingBottom: '0.2rem',
-              scrollbarWidth: 'thin',
-              scrollbarColor: 'var(--principal-morado-claro) #f1f1f1'
-            }}>
-              {nextProjects.map((project, index) => (
-                <div key={index} style={{
-                  minWidth: '400px',
-                  flex: '0 0 auto'
-                }}>
-                  <NextProjectCard project={project} />
-                </div>
-              ))}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">Próximos Eventos</h2>
+          {nextProjects.length === 0 ? (
+          //No hay eventos próximos
+            <div className="bg-gradient-to-br from-white to-[#6411AD]/11 rounded-2xl px-16 py-20 shadow-sm border border-gray-200">
+              <div className="relative z-10">
+                <p className="text-3xl md:text-4xl font-bold text-[#6411AD] bg-clip-text text-center mb-2">
+                  Muy pronto...
+                </p>
+                <p className="text-sm md:text-base text-gray-500 text-center font-medium">
+                  Estamos preparando algo especial para ti
+                </p>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="next-projects-container" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '2rem',
+              marginBottom: '3rem'
+            }}>
+      
+              <div className="hidden md:flex" style={{
+                display: 'flex',
+                gap: '2rem',
+                overflowX: 'auto',
+                paddingTop:'2rem',
+                paddingLeft:'3rem',
+                paddingRight: '3rem',
+                paddingBottom: '0.2rem',
+                scrollbarWidth: 'thin',
+                scrollbarColor: 'var(--principal-morado-claro) #f1f1f1'
+              }}>
+                {nextProjects.map((project, index) => (
+                  <div key={index} style={{
+                    minWidth: '400px',
+                    flex: '0 0 auto'
+                  }}>
+                    <NextProjectCard project={project} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-
-
-      {projects.map((project, i) => (
-        <ProjectCard key={i} project={project} />
-      ))}
-
+      
+      
+        <h2 className="font-montserrat text-4xl md:text-5xl font-extrabold text-center mb-20 bg-gradient-to-r from-[#47126b] to-[#6411AD] bg-clip-text text-transparent">
+  Conoce nuestros proyectos
+</h2>
+        {projects.map((project, i) => (
+          <ProjectCard key={i} project={project} />
+        ))}
+        
        <Footer/>
       </div>
     </main>
