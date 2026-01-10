@@ -61,11 +61,9 @@ export default function SponsorsCarousel() {
         </h2>
       {/* Contenedor del carrusel infinito */}
         <div className="relative w-full">
-        {/* Gradientes en los bordes */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         
-        {/* Carrusel - CON scroll manual */}
         <div 
             ref={scrollRef}
         className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing"

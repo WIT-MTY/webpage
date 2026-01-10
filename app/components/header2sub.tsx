@@ -34,12 +34,10 @@ const Header2sub: React.FC<Header2sub> = ({ titulo, subtitulo, texto }) => {
             {titulo} 
           </h1>
 
-         <h2 className='text-primary font-normal font-montserrat text-3xl mb-3'>
+          <h2 className='text-primary font-normal font-montserrat text-3xl mb-3'>
             {subtitulo}
-         </h2>
-         
-         
-         <p className='text-slate-600 font-thin text-base mt-1'>
+          </h2>
+          <p className='text-slate-600 font-thin text-base mt-1'>
             {texto}</p>
       </div>
     </div>

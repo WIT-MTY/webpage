@@ -25,10 +25,6 @@ export default function Home() {
                 className="w-80 h-auto mx-auto drop-shadow-2xl lg:w-96 mb-8"
               />
             </div>
-            
-            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg animate-fade-in" style={{animationDelay: '0.3s'}}>
-              Women in Tech
-            </h1>
           </div>
         </div>
       </div>
@@ -48,6 +44,97 @@ export default function Home() {
         .animate-fade-in {
           animation: fade-in 1.2s ease-out forwards;
           opacity: 0;
+        }
+
+        /* Estilos para botón con efecto ripple */
+        .btn-interactive-primary {
+          position: relative;
+          overflow: hidden;
+          background: linear-gradient(135deg, #6411AD 0%, #8B5CF6 100%);
+          color: white;
+          padding: 14px 40px;
+          border-radius: 50px;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          box-shadow: 0 4px 15px rgba(100, 17, 173, 0.3);
+        }
+
+        .btn-interactive-primary::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0;
+          height: 0;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.3);
+          transform: translate(-50%, -50%);
+          transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-interactive-primary:hover::before {
+          width: 300px;
+          height: 300px;
+        }
+
+        .btn-interactive-primary:hover {
+          transform: scale(1.08) translateY(-2px);
+          box-shadow: 0 8px 25px rgba(100, 17, 173, 0.5);
+        }
+
+        .btn-interactive-primary:active {
+          transform: scale(0.98) translateY(0);
+        }
+
+        .btn-interactive-primary span {
+          position: relative;
+          z-index: 1;
+        }
+
+        /* Estilos para botón con flecha deslizante */
+        .btn-interactive-secondary {
+          position: relative;
+          overflow: hidden;
+          background: #6411AD;
+          color: white;
+          padding: 12px 30px;
+          border-radius: 50px;
+          font-weight: 600;
+          border: 2px solid #6411AD;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-interactive-secondary::after {
+          content: '→';
+          position: absolute;
+          right: 20px;
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+
+        .btn-interactive-secondary:hover {
+          background: transparent;
+          color: #6411AD;
+          transform: scale(1.05);
+          padding-right: 45px;
+          box-shadow: 0 5px 20px rgba(100, 17, 173, 0.3);
+        }
+
+        .btn-interactive-secondary:hover::after {
+          opacity: 1;
+          right: 15px;
+        }
+
+        .btn-interactive-secondary:active {
+          transform: scale(0.98);
+        }
+
+        .btn-interactive-secondary span {
+          position: relative;
+          z-index: 1;
         }
       `}} />
 
@@ -79,8 +166,8 @@ export default function Home() {
               Somos una comunidad de mujeres que busca reducir la brecha de género en el ámbito de la tecnología.
             </p>
             <a href="/integrantes"> 
-              <button className="w-fit mt-4 px-8 py-3 rounded-full bg-[#6411AD] text-white font-semibold hover:bg-[#47126b] transition">
-                Conócenos
+              <button className="btn-interactive-secondary w-fit mt-4">
+                <span>Conócenos</span>
               </button>
             </a>
           </div>
@@ -94,7 +181,7 @@ export default function Home() {
           {/* Imagen */}
           <div className="w-full md:w-1/2 h-[50vh] md:h-[90vh]">
             <img
-          src="/images/H4HPREMIOS-33.jpg"
+          src="/images/home/home_14.JPG"
           className="w-full h-full object-cover"
           style={{ objectPosition: '20% center' }}
           alt="Proyectos"
@@ -114,14 +201,13 @@ export default function Home() {
               <span className="font-medium text-[#47126b]">¡Conoce los proyectos!</span>
             </p>
             <a href="/proyectos">
-              <button className="w-fit mt-4 px-8 py-3 rounded-full bg-[#6411AD] text-white font-semibold hover:bg-[#47126b] transition">
-                Ir a proyectos
+              <button className="btn-interactive-secondary w-fit mt-4">
+                <span>Ir a proyectos</span>
               </button>
             </a>
           </div>
         </div>
       </Section>
-
       <Footer />
     </main>
   )
