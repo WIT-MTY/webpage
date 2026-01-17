@@ -7,10 +7,10 @@ interface Challenge {
 }
 
 const challengesData: Challenge[] = [
-  { title: 'DIME AI aplicado a la Operación',           imageUrl: '/images/reto1.jpeg' },
-  { title: 'Reinventando el acceso, simple, seguro y amigable.', imageUrl: '/images/reto2.jpeg' },
-  { title: 'Predicción de fallas de Smart Coolers',      imageUrl: '/images/reto3.jpeg' },
-  { title: 'Live Loyalty Hack - Reembolso de Puntos en Tiempo Real', imageUrl: '/images/reto4.jpeg' }
+  { title: 'DIME AI aplicado a la Operación',           imageUrl: '/images/hack4her/reto1.jpeg' },
+  { title: 'Reinventando el acceso, simple, seguro y amigable.', imageUrl: '/images/hack4her/reto2.jpeg' },
+  { title: 'Predicción de fallas de Smart Coolers',      imageUrl: '/images/hack4her/reto3.jpeg' },
+  { title: 'Live Loyalty Hack - Reembolso de Puntos en Tiempo Real', imageUrl: '/images/hack4her/reto4.jpeg' }
 ]
 
 const ChallengesSection: React.FC = () => (

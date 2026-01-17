@@ -1,3 +1,4 @@
+//header2sub.tsx
 'use client'
 import clsx from 'clsx'
 import React from 'react'
@@ -29,16 +30,14 @@ const Header2sub: React.FC<Header2sub> = ({ titulo, subtitulo, texto }) => {
       <div className={clsx( 
         "basis-auto flex flex-col",
       )}>
-         <h1 className='text-primary font-bold font-montserrat text-5xl mb-3'>
+          <h1 className='text-primary font-bold font-montserrat text-5xl mb-3'>
             {titulo} 
-         </h1>
+          </h1>
 
-         <h2 className='text-primary font-normal font-montserrat text-3xl mb-3'>
+          <h2 className='text-primary font-normal font-montserrat text-3xl mb-3'>
             {subtitulo}
-         </h2>
-         
-         
-         <p className='text-slate-600 font-thin text-base mt-1'>
+          </h2>
+          <p className='text-slate-600 font-thin text-base mt-1'>
             {texto}</p>
       </div>
     </div>

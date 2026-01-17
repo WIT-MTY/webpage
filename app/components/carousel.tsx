@@ -1,3 +1,4 @@
+//carousel.tsx
 'use client'
 import React, { useState, useEffect } from 'react';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";

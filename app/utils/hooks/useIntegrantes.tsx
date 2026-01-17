@@ -1,6 +1,69 @@
-
 export const useIntegrantes = () => {
     const integrantes = [
+        {
+            subtitulo: "AGOSTO 2025 - JUNIO 2026",
+            integrantes: [
+                {
+                    nombre: "Nicole Arámbula",
+                    puesto: "Presidenta",
+                    image: "/images/integrantes/25-26/nicole.png",
+                    row: 1,
+                    position: "left",
+                },
+                {
+                    nombre: "Mariel García",
+                    puesto: "Vicepresidenta",
+                    image: "/images/integrantes/25-26/mariel.png",
+                    row: 1,
+                    position: "right",
+                },
+
+                {
+                    nombre: "Karen Estrada",
+                    puesto: "Directora de Marketing",
+                    image: "/images/integrantes/25-26/karen.png",
+                    row: 2,
+                    position: "left",
+                },
+                {
+                    nombre: "Andrea de la Peña",
+                    puesto: "Directora de Finanzas",
+                    image: "/images/integrantes/25-26/andrea.png",
+                    row: 2,
+                    position: "center",
+                },
+                {
+                    nombre: "Carolina Cruz",
+                    puesto: "Directora de Proyectos",
+                    image: "/images/integrantes/25-26/carolina.png",
+                    row: 2,
+                    position: "right",
+                },
+
+                {
+                    nombre: "María Fernanda Cuevas",
+                    puesto: "Directora de Responsabilidad Social",
+                    image: "/images/integrantes/25-26/mafer.png",
+                    row: 3,
+                    position: "left",
+                },
+                {
+                    nombre: "Azereth Gutiérrez",
+                    puesto: "Directora de Vinculación",
+                    image: "/images/integrantes/25-26/azereth.png",
+                    row: 3,
+                    position: "center",
+                },
+                {
+                    nombre: "Fátima Castillo",
+                    puesto: "Directora de Software",
+                    image: "/images/integrantes/25-26/fatima.png",
+                    row: 3,
+                    position: "right",
+                },
+            ],
+        },
+
         {
             subtitulo: "AGOSTO 2024 - JUNIO 2025",
             integrantes: [
@@ -41,10 +104,11 @@ export const useIntegrantes = () => {
                     puesto: "Directora de Finanzas",
                     image: "/images/integrantes/24-25/eunice.png",
                     row: 2,
-                    position: "right"
-                }
-            ]
+                    position: "right",
+                },
+            ],
         },
+
         {
             subtitulo: "AGOSTO 2023 - JUNIO 2024",
             integrantes: [
@@ -92,8 +156,8 @@ export const useIntegrantes = () => {
                 {
                     nombre: "Darianna Téllez",
                     puesto: "Directora de Finanzas",
-                    image: "/images/integrantes/23-24/Dari.png",
                     fecha: "(febrero-junio 2024)",
+                    image: "/images/integrantes/23-24/Dari.png",
                     row: 2,
                     position: "right",
                     linkedin: "https://www.linkedin.com/in/darianna-t%C3%A9llez-777849257/"
@@ -113,10 +177,11 @@ export const useIntegrantes = () => {
                     fecha: "(agosto-diciembre 2023)",
                     image: "/images/integrantes/23-24/Ari.png",
                     row: 3,
-                    position: "right"
-                }
-            ]
-        }
-    ]
+                    position: "right",
+                },
+            ],
+        },
+    ];
+
     return integrantes;
-}
+};

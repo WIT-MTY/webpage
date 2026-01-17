@@ -1,6 +1,7 @@
 import Counter from "@/app/components/hack4her/countdown";
 import SectionHack4Her from "@/app/components/hack4her/sectionHack4Her";
 import Sponsor from "@/app/components/hack4her/secSponsor";
+import Section from "@/app/components/general/Section";
 import Definition from "@/app/components/hack4her/QueEsHack4Her"
 import Scheme from "@/app/components/hack4her/schedule"
 import FAQS from '@/app/components/hack4her/textCarousel'
@@ -11,8 +12,19 @@ import ConoceArca from "@/app/components/hack4her/colaborador";
 const Hack4HerPage = () => {
     return (
         <>
+            <div> 
+                <Section>
+                    <div className="min-h-[calc(70vh-100px)] flex items-center bg-white text-center">
+                        <h2 className="text-5xl md:text-8xl font-extrabold bg-gradient-to-r from-purple-700 to-pink-500 bg-clip-text text-transparent">
+                            Muy pronto…
+                        </h2>
+                    </div>
+                </Section>
+            </div> 
             <div className="bg-hack4her-bg pb-20 pt-6">
+                
                 <Counter />
+                
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
                 <div className="visible md:h-0 h-32 bg-hack4her-bg"></div>
@@ -36,6 +48,7 @@ const Hack4HerPage = () => {
                 <div className="visible md:h-0 h-12 bg-hack4her-bg"></div>
                 <Sponsor />
             </div>
+
             {/* Badge de MLH */}
             <a 
                 id="mlh-trust-badge" 

@@ -1,3 +1,4 @@
+//page.tsx - integrantes
 import IntegrantesHeader from "@/app/components/integrantes/integrantesHeader"
 import IntegrantesRow from "@/app/components/integrantes/integrantesRow"
 import { useIntegrantes } from "@/app/utils/hooks/useIntegrantes";
